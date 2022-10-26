@@ -1,9 +1,10 @@
 import React from "react";
+import { DogsInfo } from "../components/DogsIngo/DogsInfo";
 
-function LandingPage() {
+const LandingPage= () => {
     return
     <div className="LandingPage">
-        
+   <DogsInfo />
     </div>
 }
 export {LandingPage};
