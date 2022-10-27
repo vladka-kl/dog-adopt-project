@@ -10,3 +10,17 @@
   --standard-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
 }
 
+/* ----- Restyling Elements of NPM Package for RandomDogSlider----- */
+
+.alice-carousel *{
+    color: black;
+    
+}
+
+.alice-carousel__dots-item.__active{
+    background: black !important;
+}
+
+.alice-carousel__dots-item {
+    background: #0000003e !important;
+}
