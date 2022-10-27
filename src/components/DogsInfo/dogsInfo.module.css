@@ -1,43 +1,32 @@
 * {
-    background-color: whitesmoke;
     font-family: Arial;
-}
-
-#DogCart {
-    display: flex;
-    background-color: bisque;
-    font-size: 30px;
 }
 
 .card {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
-    height: 550px;
-    width: 100%;
     background-color: bisque;
 }
 
-#dataContainer {
-    background-color: rgb(221, 135, 29);
-}
 
 .infoBox {
+    display: flex;
     width: 50%;
     border-width: 2px;
     border-color: black;
-    background-color: rgb(221, 135, 29);
     height: 300px;
 }
 
 
 .pictureBox {
+    display: flex;
     width: 50%;
     border-width: 2px;
     border-color: black;
     height: 300px;
 }
+
 
 .title {
     font-size: 18px;
@@ -63,7 +52,6 @@ li {
     background-color: aqua;
     height: 40px;
     width: 100px;
-
 }
 
 

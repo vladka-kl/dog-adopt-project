@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 // import { Dropdown } from "../Dropdown";
 // import { Button } from "../Button";
 // import {Picture } from ".Picture";
@@ -10,8 +10,16 @@ import { BreedsInfoBox } from "./BreedsInfoBox";
 
 
 const DogsInfo = () => {
+    const [index, setIndex] = useState(0);
 
-    console.log(pictures)
+    useEffect(() => {
+        console.log("I change state now");
+    }, [index]);
+
+    const handleOnClick = () => {
+        setIndex(index + 1);
+    }
+
     return <section className={styles.main}>
         <h2> Some info about breed </h2>
         <select className={styles.dropdown}>
@@ -31,7 +39,7 @@ const DogsInfo = () => {
                         origin={breed.origin}
                         life_span={breed.life_span}
                     />
-                ))}
+                ))[0]}
             </div>
             <div id="picContainer">
                 {pictures.map((dog, index) => (
@@ -40,7 +48,7 @@ const DogsInfo = () => {
                         id={dog.id}
                         url={dog.url}
                     />
-                ))}
+                ))[0]}
             </div>
         </div>
         < div className={styles.buttonPlace}>
@@ -49,9 +57,9 @@ const DogsInfo = () => {
                     <p> More info</p>
                 </button>
             </a>
-            <button> Go to another breed </button>
+            <button className={styles.button} onClick={handleOnClick}> Go to another breed </button>
         </div>
     </section >
 }
 
-export { DogsInfo };
+export { DogsInfo }; 
