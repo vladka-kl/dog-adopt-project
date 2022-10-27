@@ -9,10 +9,10 @@ import {RandomText} from "../components/AboutUsInfo/RandomText"
 function LandingPage() {
     return(
     <div className="LandingPage">
-      <RandomDogSlider />
       <AboutUsInfo
       title={RandomText.title}
       text={RandomText.text}/>
+       <RandomDogSlider />
     </div>)
 }
 export {LandingPage};
