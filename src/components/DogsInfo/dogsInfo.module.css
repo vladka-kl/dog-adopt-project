@@ -7,24 +7,21 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: bisque;
+    padding: 5px;
+    padding-left: 5px;
 }
 
 
 .infoBox {
     display: flex;
-    width: 50%;
+    width: 80%;
     border-width: 2px;
     border-color: black;
-    height: 300px;
 }
-
 
 .pictureBox {
     display: flex;
-    width: 50%;
-    border-width: 2px;
-    border-color: black;
-    height: 300px;
+    width: 100%;
 }
 
 
@@ -44,12 +41,12 @@ ul {
 }
 
 li {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 
 }
 
 .button {
-    background-color: aqua;
+    background-color: rgb(205, 214, 78);
     height: 40px;
     width: 100px;
 }
@@ -61,9 +58,13 @@ li {
     margin-left: 30px;
     height: 40px;
     width: 150px;
-    background-color: aqua;
+    background-color: rgb(205, 214, 78);
     margin-bottom: 30px;
 }
 
 
-.buttonPlace {}
+.buttonPlace {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

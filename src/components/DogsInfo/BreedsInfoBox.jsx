@@ -15,6 +15,7 @@ const BreedsInfoBox = props => {
                         <p className={styles.title}>Breed life-span:</p>
                         <p className={styles.responce}>{props.life_span} </p></li>
                 </ul>
+                <img className={styles.pictureBox} src={props.image} alt="alt" />
             </div>
         </div>
     )
