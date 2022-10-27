@@ -1,0 +1,81 @@
+* {
+    background-color: whitesmoke;
+    font-family: Arial;
+}
+
+#DogCart {
+    display: flex;
+    background-color: bisque;
+    font-size: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 550px;
+    width: 100%;
+    background-color: bisque;
+}
+
+#dataContainer {
+    background-color: rgb(221, 135, 29);
+}
+
+.infoBox {
+    width: 50%;
+    border-width: 2px;
+    border-color: black;
+    background-color: rgb(221, 135, 29);
+    height: 300px;
+}
+
+
+.pictureBox {
+    width: 50%;
+    border-width: 2px;
+    border-color: black;
+    height: 300px;
+}
+
+.title {
+    font-size: 18px;
+    color: black;
+}
+
+.responce {
+    color: brown;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+    color: rgb(53, 117, 117);
+}
+
+li {
+    margin-bottom: 10px;
+
+}
+
+.button {
+    background-color: aqua;
+    height: 40px;
+    width: 100px;
+
+}
+
+
+.dropdown {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 30px;
+    height: 40px;
+    width: 150px;
+    background-color: aqua;
+    margin-bottom: 30px;
+}
+
+
+.buttonPlace {}
