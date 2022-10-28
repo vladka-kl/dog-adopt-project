@@ -1,6 +1,6 @@
 import styles from "./dogsInfo.module.css"
 import { breedsData } from "./data";
-
+import React from "react"
 const Dropdown = props => {
     return (
         <select onChange={props.onSelect}

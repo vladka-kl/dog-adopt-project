@@ -7,7 +7,6 @@ import { breedsData } from "./data";
 import { BreedsInfoBox } from "./BreedsInfoBox";
 import { Dropdown } from "./dropdown";
 
-
 const DogsInfo = () => {
     const [index, setIndex] = useState(0);
     const [name, setName] = useState("");
