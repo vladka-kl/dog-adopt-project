@@ -1,38 +1,26 @@
-.App {
-  text-align: center;
+
+:root {
+  --main-color: #eaeaea;
+  --main-font: "Gothic A1", sans-serif;
+  --standard-margin: 16px;
+  --small-margin: 8px;
+  --main-font: 16px;
+  --large-font: 24px;
+  --standard-padding: 16px;
+  --standard-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ----- Restyling Elements of NPM Package for RandomDogSlider----- */
+
+.alice-carousel *{
+    color: black;
+    
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.alice-carousel__dots-item.__active{
+    background: black !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.alice-carousel__dots-item {
+    background: #0000003e !important;
 }
