@@ -1,32 +1,47 @@
-import AliceCarousel from 'react-alice-carousel';
-import React from 'react';
-import styles from './RandomDogSlider.module.css'
+import AliceCarousel from "react-alice-carousel";
+import React, { useState, useEffect } from "react";
+import styles from "./RandomDogSlider.module.css";
+import axios from "axios";
 
-const responsive = {
-  0: { items: 1 },
-  568: { items: 2 },
-  1024: { items: 3 },
-};
+function RandomDogSlider() {
+  const url = "https://api.thedogapi.com/v1/breeds";
+  const [images, setImages] = useState([]);
+  // const [loading, setLoading] = useState(true);
 
-const items = [
-  <div className={styles.item} data-value="1">
-    <img src='https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313_1280.jpg' alt='image1' />
-  </div>,
-  <div className={styles.item} data-value="2">
-    <img src="https://cdn.pixabay.com/photo/2016/07/15/15/55/dachshund-1519374_1280.jpg" alt='image1' />
-  </div>,
-  <div className={styles.item} data-value="3">
-    <img src="https://cdn.pixabay.com/photo/2015/03/27/13/16/maine-coon-694730_1280.jpg" alt='image1' />
-  </div>
-];
+  const handleFetching = (url, setResp) => {
+    axios.get(url).then((resp) => {
+      setResp(resp.data);
+      // setLoading(false);
+    });
+    // .catch((e) => {
+    //   console.log(e);
+    //   setLoading(false);
+    // });
+  };
 
-const RandomDogSlider = () => (
-  <AliceCarousel
-      mouseTracking
-      items={items}
-      responsive={responsive}
-      controlsStrategy="alternate"
-  />
-);
+  useEffect(() => {
+    handleFetching(url, setImages);
+  }, []);
+  console.log(images);
 
-export { RandomDogSlider }
+  const items = images.map((e) => (
+    <div className={styles.e.image.id}>
+      <img src={e.image.url} />
+    </div>
+  ));
+
+  // <div>
+  //   {loading ? (
+  //     <h2>loading...</h2>
+  //   ) : (
+
+  //     ))
+  //   )}
+  // </div>;
+
+  return (
+    <AliceCarousel mouseTracking items={items} controlsStrategy="alternate" />
+  );
+}
+
+export { RandomDogSlider };
