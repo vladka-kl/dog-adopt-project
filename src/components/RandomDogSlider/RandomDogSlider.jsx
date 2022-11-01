@@ -3,44 +3,54 @@ import React, { useState, useEffect } from "react";
 import styles from "./RandomDogSlider.module.css";
 import axios from "axios";
 
-function RandomDogSlider() {
-  const url = "https://api.thedogapi.com/v1/breeds";
-  const [images, setImages] = useState([]);
-  // const [loading, setLoading] = useState(true);
-
-  const handleFetching = (url, setResp) => {
-    axios.get(url).then((resp) => {
+const handleFetching = (url, setResp, setLoading) => {
+  axios
+    .get(url)
+    .then((resp) => {
       setResp(resp.data);
-      // setLoading(false);
+      setLoading(false);
+    })
+    .catch((e) => {
+      console.log(e);
+      setLoading(false);
     });
-    // .catch((e) => {
-    //   console.log(e);
-    //   setLoading(false);
-    // });
+};
+function RandomDogSlider() {
+  function getImage() {
+    const url = "https://api.thedogapi.com/v1/breeds";
+    const [images, setImages] = useState([]);
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
+      handleFetching(url, setImages, setLoading);
+    }, []);
+    console.log(images);
+
+    return (
+      <div>
+        {loading ? (
+          <h2>loading...</h2>
+        ) : (
+          images.map((e) => <img src={e.image.url} />)
+        )}
+      </div>
+    );
+  }
+
+  const responsive = {
+    0: { items: 1 },
+    568: { items: 3 },
+    1024: { items: 6 },
   };
 
-  useEffect(() => {
-    handleFetching(url, setImages);
-  }, []);
-  console.log(images);
-
-  const items = images.map((e) => (
-    <div className={styles.e.image.id}>
-      <img src={e.image.url} />
-    </div>
-  ));
-
-  // <div>
-  //   {loading ? (
-  //     <h2>loading...</h2>
-  //   ) : (
-
-  //     ))
-  //   )}
-  // </div>;
-
   return (
-    <AliceCarousel mouseTracking items={items} controlsStrategy="alternate" />
+    <div>
+      <AliceCarousel
+        responsive={responsive}
+        mouseTracking
+        items={images}
+        controlsStrategy="alternate"
+      />
+    </div>
   );
 }
 
