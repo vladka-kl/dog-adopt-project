@@ -8,7 +8,7 @@ import { DogsInfo } from "../components/DogsInfo/DogsInfo";
 const LandingPage = () => (
   <div className="LandingPage">
     <h2>LandingPage</h2>
-    <AboutUsInfo />
+    <AboutUsInfo title={RandomText.title} text={RandomText.text} />
     <RandomDogSlider />
     <DogsInfo />
   </div>

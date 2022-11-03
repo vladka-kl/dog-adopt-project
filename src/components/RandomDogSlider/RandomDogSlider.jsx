@@ -28,21 +28,27 @@ function RandomDogSlider() {
   if (loading) {
     return <h2> loading..</h2>;
   }
-  Math.floor(Math.random() * images.length);
-  const image = images.map((e, i) => <img src={e.image.url} alt={e.name} />);
+
+  const image = images.map((e) => <img src={e.image.url} alt={e.name} />);
+
+  const randomNumber = Math.floor(Math.random() * images.length) - 3;
+  console.log(image);
+
+  const randomArray = image.slice(randomNumber, randomNumber + 3);
+  console.log(randomArray);
 
   const responsive = {
     0: { items: 1 },
-    568: { items: 3 },
-    1024: { items: 6 },
+    568: { items: 2 },
+    1024: { items: 3 },
   };
 
   return (
-    <div>
+    <div className={styles.wrapper}>
       <AliceCarousel
-        // responsive={responsive}
+        responsive={responsive}
         mouseTracking
-        items={image}
+        items={randomArray}
         controlsStrategy="alternate"
       />
     </div>
