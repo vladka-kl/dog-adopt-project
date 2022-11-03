@@ -1,5 +1,4 @@
 import AliceCarousel from "react-alice-carousel";
-<<<<<<< HEAD
 import React, { useState, useEffect } from "react";
 import styles from "./RandomDogSlider.module.css";
 import axios from "axios";
@@ -18,82 +17,42 @@ const handleFetching = (url, setResp, setLoading) => {
 };
 
 function RandomDogSlider() {
+  const url = "https://api.thedogapi.com/v1/breeds";
+  const [images, setImages] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-    const url = "https://api.thedogapi.com/v1/breeds";
-    const [images, setImages] = useState([]);
-    const [loading, setLoading] = useState(true);
-    useEffect(() => {
-      handleFetching(url, setImages, setLoading);
-    }, []);
-    console.log(images);
+  useEffect(() => {
+    handleFetching(url, setImages, setLoading);
+  }, []);
 
-    return (
-      <div>
-        {loading ? (
-          <h2>loading...</h2>
-        ) : (
-          images.map((e) => <img src={e.image.url} />)
-        )}
-      </div>
-    );
+  if (loading) {
+    return <h2> loading..</h2>;
   }
 
-  const responsive = {
-    0: { items: 1 },
-    568: { items: 3 },
-    1024: { items: 6 },
-  };
+  const image = images.map((e) => <img src={e.image.url} alt={e.name} />);
+
+  const randomNumber = Math.floor(Math.random() * images.length) - 3;
+  console.log(image);
+
+  const randomArray = image.slice(randomNumber, randomNumber + 3);
+  console.log(randomArray);
+
+  // const responsive = {
+  //   0: { items: 0 },
+  //   568: { items: 1 },
+  //   1024: { items: 2 },
+  // };
 
   return (
-    <div>
+    <div className={styles.wrapper}>
       <AliceCarousel
-      responsive={responsive}
-      mouseTracking 
-      items={images}
-      controlsStrategy="alternate"
-      /> 
+        // responsive={responsive}
+        mouseTracking
+        items={randomArray}
+        controlsStrategy="alternate"
+      />
     </div>
   );
 }
-=======
-import React from "react";
-import styles from "./RandomDogSlider.module.css";
-
-const responsive = {
-  0: { items: 1 },
-  568: { items: 3 },
-  1024: { items: 6 },
-};
-
-const items = [
-  <div className={styles.item} data-value="1">
-    <img
-      src="https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313_1280.jpg"
-      alt="image1"
-    />
-  </div>,
-  <div className={styles.item} data-value="2">
-    <img
-      src="https://cdn.pixabay.com/photo/2016/07/15/15/55/dachshund-1519374_1280.jpg"
-      alt="image1"
-    />
-  </div>,
-  <div className={styles.item} data-value="3">
-    <img
-      src="https://cdn.pixabay.com/photo/2015/03/27/13/16/maine-coon-694730_1280.jpg"
-      alt="image1"
-    />
-  </div>,
-];
-
-const RandomDogSlider = () => (
-  <AliceCarousel
-    mouseTracking
-    items={items}
-    responsive={responsive}
-    controlsStrategy="alternate"
-  />
-);
->>>>>>> 8a34030e98f19939ac87c1edd266d4e6df70f6d8
 
 export { RandomDogSlider };
