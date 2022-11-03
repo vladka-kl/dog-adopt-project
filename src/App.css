@@ -1,9 +1,8 @@
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Epilogue', sans-serif;
+  font-family: "Epilogue", sans-serif;
 }
 
 body {
@@ -11,6 +10,7 @@ body {
   height: 100vh;
   width: 100vw;
   max-width: 100%;
+}
 
 :root {
   --main-color: #eaeaea;
@@ -25,16 +25,14 @@ body {
 
 /* ----- Restyling Elements of NPM Package for RandomDogSlider----- */
 
-.alice-carousel *{
-    color: black;
-    
+.alice-carousel * {
+  color: black;
 }
 
-.alice-carousel__dots-item.__active{
-    background: black !important;
+.alice-carousel__dots-item.__active {
+  background: black !important;
 }
 
 .alice-carousel__dots-item {
-    background: #0000003e !important;
-
+  background: #0000003e !important;
 }
