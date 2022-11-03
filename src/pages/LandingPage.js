@@ -4,6 +4,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import { AboutUsInfo } from "../components/AboutUsInfo/AboutUsInfo";
 import { RandomText } from "../components/AboutUsInfo/RandomText";
 import { DogsInfo } from "../components/DogsInfo/DogsInfo";
+import { Footer } from "../components/Footer/Footer";
 
 const LandingPage = () => (
   <div className="LandingPage">
@@ -11,6 +12,7 @@ const LandingPage = () => (
     <AboutUsInfo />
     <RandomDogSlider />
     <DogsInfo />
+    <Footer />
   </div>
 );
 
