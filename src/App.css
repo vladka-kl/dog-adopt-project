@@ -1,3 +1,4 @@
+
 * {
   padding: 0;
   margin: 0;
@@ -10,4 +11,30 @@ body {
   height: 100vh;
   width: 100vw;
   max-width: 100%;
+
+:root {
+  --main-color: #eaeaea;
+  --main-font: "Gothic A1", sans-serif;
+  --standard-margin: 16px;
+  --small-margin: 8px;
+  --main-font: 16px;
+  --large-font: 24px;
+  --standard-padding: 16px;
+  --standard-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
+}
+
+/* ----- Restyling Elements of NPM Package for RandomDogSlider----- */
+
+.alice-carousel *{
+    color: black;
+    
+}
+
+.alice-carousel__dots-item.__active{
+    background: black !important;
+}
+
+.alice-carousel__dots-item {
+    background: #0000003e !important;
+
 }
