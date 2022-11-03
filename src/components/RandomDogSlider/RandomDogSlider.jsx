@@ -1,41 +1,58 @@
 import AliceCarousel from "react-alice-carousel";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./RandomDogSlider.module.css";
+import axios from "axios";
 
-const responsive = {
-  0: { items: 1 },
-  568: { items: 3 },
-  1024: { items: 6 },
+const handleFetching = (url, setResp, setLoading) => {
+  axios
+    .get(url)
+    .then((resp) => {
+      setResp(resp.data);
+      setLoading(false);
+    })
+    .catch((e) => {
+      console.log(e);
+      setLoading(false);
+    });
 };
 
-const items = [
-  <div className={styles.item} data-value="1">
-    <img
-      src="https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313_1280.jpg"
-      alt="image1"
-    />
-  </div>,
-  <div className={styles.item} data-value="2">
-    <img
-      src="https://cdn.pixabay.com/photo/2016/07/15/15/55/dachshund-1519374_1280.jpg"
-      alt="image1"
-    />
-  </div>,
-  <div className={styles.item} data-value="3">
-    <img
-      src="https://cdn.pixabay.com/photo/2015/03/27/13/16/maine-coon-694730_1280.jpg"
-      alt="image1"
-    />
-  </div>,
-];
+function RandomDogSlider() {
+  const url = "https://api.thedogapi.com/v1/breeds";
+  const [images, setImages] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-const RandomDogSlider = () => (
-  <AliceCarousel
-    mouseTracking
-    items={items}
-    responsive={responsive}
-    controlsStrategy="alternate"
-  />
-);
+  useEffect(() => {
+    handleFetching(url, setImages, setLoading);
+  }, []);
+
+  if (loading) {
+    return <h2> loading..</h2>;
+  }
+
+  const image = images.map((e) => <img src={e.image.url} alt={e.name} />);
+
+  const randomNumber = Math.floor(Math.random() * images.length) - 3;
+  console.log(image);
+
+  const randomArray = image.slice(randomNumber, randomNumber + 3);
+  console.log(randomArray);
+
+  // const responsive = {
+  //   0: { items: 0 },
+  //   568: { items: 1 },
+  //   1024: { items: 2 },
+  // };
+
+  return (
+    <div className={styles.wrapper}>
+      <AliceCarousel
+        // responsive={responsive}
+        mouseTracking
+        items={randomArray}
+        controlsStrategy="alternate"
+      />
+    </div>
+  );
+}
 
 export { RandomDogSlider };
