@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useEffect, useState } from "react";
 import AppRoutes from "./components/Route/AppRoutes";
 import axios from "axios";
@@ -26,20 +25,6 @@ function App(name, age) {
   }, []);
 
   return <div className="App">{data && <AppRoutes data={data} />}</div>;
-=======
-import './App.css';
-import React from 'react';
-import { LandingPage } from './pages/LandingPage';
-
-function App() {
-  // here we fatch the data from the api and render it.
-  return (
-    <div className='App'>
-      <h1></h1> 
-      <LandingPage />
-    </div>
-  );
->>>>>>> db7042db42b9d763cfb33577f947185210923c84
 }
 
 export default App;

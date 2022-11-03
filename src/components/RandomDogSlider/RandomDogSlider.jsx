@@ -16,7 +16,7 @@ const handleFetching = (url, setResp, setLoading) => {
     });
 };
 function RandomDogSlider() {
-  function getImage() {
+
     const url = "https://api.thedogapi.com/v1/breeds";
     const [images, setImages] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -45,11 +45,11 @@ function RandomDogSlider() {
   return (
     <div>
       <AliceCarousel
-        responsive={responsive}
-        mouseTracking
-        items={images}
-        controlsStrategy="alternate"
-      />
+      responsive={responsive}
+      mouseTracking 
+      items={images}
+      controlsStrategy="alternate"
+      /> 
     </div>
   );
 }
