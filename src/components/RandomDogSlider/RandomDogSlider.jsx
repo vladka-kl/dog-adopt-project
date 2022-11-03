@@ -17,25 +17,19 @@ const handleFetching = (url, setResp, setLoading) => {
 };
 
 function RandomDogSlider() {
+  const url = "https://api.thedogapi.com/v1/breeds";
+  const [images, setImages] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-    const url = "https://api.thedogapi.com/v1/breeds";
-    const [images, setImages] = useState([]);
-    const [loading, setLoading] = useState(true);
-    useEffect(() => {
-      handleFetching(url, setImages, setLoading);
-    }, []);
-    console.log(images);
+  useEffect(() => {
+    handleFetching(url, setImages, setLoading);
+  }, []);
 
-    return (
-      <div>
-        {loading ? (
-          <h2>loading...</h2>
-        ) : (
-          images.map((e) => <img src={e.image.url} />)
-        )}
-      </div>
-    );
+  if (loading) {
+    return <h2> loading..</h2>;
   }
+  Math.floor(Math.random() * images.length);
+  const image = images.map((e, i) => <img src={e.image.url} alt={e.name} />);
 
   const responsive = {
     0: { items: 1 },
@@ -46,11 +40,11 @@ function RandomDogSlider() {
   return (
     <div>
       <AliceCarousel
-      responsive={responsive}
-      mouseTracking 
-      items={images}
-      controlsStrategy="alternate"
-      /> 
+        // responsive={responsive}
+        mouseTracking
+        items={image}
+        controlsStrategy="alternate"
+      />
     </div>
   );
 }
