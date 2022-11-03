@@ -1,4 +1,17 @@
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Epilogue', sans-serif;
+}
+
+body {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+
 :root {
   --main-color: #eaeaea;
   --main-font: "Gothic A1", sans-serif;
@@ -23,4 +36,5 @@
 
 .alice-carousel__dots-item {
     background: #0000003e !important;
+
 }
