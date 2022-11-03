@@ -1,0 +1,70 @@
+* {
+    font-family: Arial;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: bisque;
+    padding: 5px;
+    padding-left: 5px;
+}
+
+
+.infoBox {
+    display: flex;
+    width: 80%;
+    border-width: 2px;
+    border-color: black;
+}
+
+.pictureBox {
+    display: flex;
+    width: 100%;
+}
+
+
+.title {
+    font-size: 18px;
+    color: black;
+}
+
+.responce {
+    color: brown;
+    font-size: 16px;
+}
+
+ul {
+    list-style: none;
+    color: rgb(53, 117, 117);
+}
+
+li {
+    margin-bottom: 5px;
+
+}
+
+.button {
+    background-color: rgb(205, 214, 78);
+    height: 40px;
+    width: 100px;
+}
+
+
+.dropdown {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 30px;
+    height: 40px;
+    width: 150px;
+    background-color: rgb(205, 214, 78);
+    margin-bottom: 30px;
+}
+
+
+.buttonPlace {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
