@@ -1,5 +1,4 @@
 .footer {
-    position: fixed;
     left: 0%;
     right: 0%;
     top: 92.24%;
@@ -12,7 +11,6 @@
 .picBlock {
     display: flex;
     flex-direction: row;
-    position: fixed;
     left: 0%;
     right: 0%;
     bottom: 0%;
@@ -21,13 +19,16 @@
 .colorBlock {
     background-color: rgba(167, 141, 117, 1);
     width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .picture {
     width: 50%;
 }
 
-p {
+.text {
     color: rgba(255, 255, 255, 1);
     text-align: center;
     font-family: 'Montserrat';
@@ -35,7 +36,6 @@ p {
 
 
 .copyright {
-    position: fixed;
     text-align: center;
     color: rgba(255, 255, 255, 1);
     background-color: rgba(58, 58, 58, 1);
@@ -51,4 +51,33 @@ p {
     right: 0%;
     top: 96%;
     bottom: 0%;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .copyright {
+        font-size: 16px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    .picBlock {
+        max-height: 100px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .copyright {
+        font-size: 18px;
+    }
+
+    .text {
+        font-size: 22px;
+    }
+
+    .picBlock {
+        max-height: 150px;
+    }
 }

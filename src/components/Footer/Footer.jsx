@@ -7,7 +7,7 @@ const Footer = () => {
         <div className={styles.footer}>
             <div className={styles.picBlock}>
                 <div className={styles.colorBlock}>
-                    <p> Adopt a Dog today </p>
+                    <p className={styles.text}> Adopt a Dog today </p>
                 </div>
                 <img src={FooterDog} alt="footer-dog" className={styles.picture}></img>
             </div>
