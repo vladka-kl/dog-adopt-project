@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useEffect, useState } from "react";
 import AppRoutes from "./components/Route/AppRoutes";
 import axios from "axios";
