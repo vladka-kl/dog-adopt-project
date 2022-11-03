@@ -5,13 +5,10 @@ import { AboutUsInfo } from "../components/AboutUsInfo/AboutUsInfo";
 import { RandomText } from "../components/AboutUsInfo/RandomText";
 import { DogsInfo } from "../components/DogsInfo/DogsInfo";
 
-function LandingPage() {
-  return (
+const LandingPage = () => (
     <div className="LandingPage">
-      <AboutUsInfo title={RandomText.title} text={RandomText.text} />
-      <RandomDogSlider />
-      <DogsInfo />
+        <h2>LandingPage</h2>
     </div>
-  );
-}
-export { LandingPage };
+)
+
+export default LandingPage;
