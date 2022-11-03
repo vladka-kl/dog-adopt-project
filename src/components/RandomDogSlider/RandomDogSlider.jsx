@@ -15,6 +15,7 @@ const handleFetching = (url, setResp, setLoading) => {
       setLoading(false);
     });
 };
+
 function RandomDogSlider() {
 
     const url = "https://api.thedogapi.com/v1/breeds";
