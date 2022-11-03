@@ -1,0 +1,28 @@
+.welcomeBox {
+  background-color: var(--bg-color);
+  color: #ffffff85;
+  font-size: 74px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-size: cover;
+  background-position: bottom;
+  min-height: 90vh;
+  margin-bottom: 24px;
+  padding: 1em;
+}
+
+.title {
+  padding: var(--standard-padding);
+}
+
+.adoptButton {
+  padding: var(--standard-padding);
+  border-radius: 12px;
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--main-color);
+  margin-left: 16px;
+  box-shadow: var(--standard-shadow);
+  text-shadow: var(--standard-shadow);
+}

@@ -1,5 +1,5 @@
 .mainHeader {
-  background: yellow;
+  background-color: var(--bg-color);
   display: flex;
   justify-content: space-between;
   padding: 1em;

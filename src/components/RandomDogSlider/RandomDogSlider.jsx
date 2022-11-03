@@ -37,16 +37,16 @@ function RandomDogSlider() {
   const randomArray = image.slice(randomNumber, randomNumber + 3);
   console.log(randomArray);
 
-  const responsive = {
-    0: { items: 1 },
-    568: { items: 2 },
-    1024: { items: 3 },
-  };
+  // const responsive = {
+  //   0: { items: 0 },
+  //   568: { items: 1 },
+  //   1024: { items: 2 },
+  // };
 
   return (
     <div className={styles.wrapper}>
       <AliceCarousel
-        responsive={responsive}
+        // responsive={responsive}
         mouseTracking
         items={randomArray}
         controlsStrategy="alternate"

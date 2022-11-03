@@ -1,8 +1,14 @@
-.wrapper {
+/* .wrapper {
   display: flex;
-}
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 24px;
+  gap: 10px;
+} */
 /* Resize images */
 .wrapper img {
+  display: flex;
   width: 100%;
   height: auto;
   padding: 10%;
