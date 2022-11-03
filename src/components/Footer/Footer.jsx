@@ -1,12 +1,17 @@
 import styles from './footer.module.css'
 import React from 'react'
+import FooterDog from '../../images/FooterDog.png'
 
 const Footer = () => {
     return (
         <div className={styles.footer}>
-            <div>
-                <h3> © Wilders team 2022 </h3>
+            <div className={styles.picBlock}>
+                <div className={styles.colorBlock}>
+                    <p> Adopt a Dog today </p>
+                </div>
+                <img src={FooterDog} alt="footer-dog" className={styles.picture}></img>
             </div>
+            <div className={styles.copyright}> © Wilders team 2022 </div>
         </div>
     )
 };

@@ -1,0 +1,54 @@
+.footer {
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    top: 92.24%;
+    bottom: 0%;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+
+.picBlock {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+}
+
+.colorBlock {
+    background-color: rgba(167, 141, 117, 1);
+    width: 50%;
+}
+
+.picture {
+    width: 50%;
+}
+
+p {
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+
+.copyright {
+    position: fixed;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(58, 58, 58, 1);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 19px;
+    letter-spacing: -0.01em;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    left: 0%;
+    right: 0%;
+    top: 96%;
+    bottom: 0%;
+}
