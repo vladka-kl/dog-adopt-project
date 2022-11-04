@@ -5,13 +5,14 @@ const BreedsInfoBox = props => {
     return (
         <div className={styles.infoBox}>
             <div>
-                <ul>
-                    <li>
+                <ul className={styles.container}>
+                    <li className={styles.item}>
                         <p className={styles.title}>Breed name:</p>
                         <p className={styles.responce}>{props.name}</p> </li>
-                    <li><p className={styles.title}>Breed origin:</p>
+                    <li className={styles.item}>
+                        <p className={styles.title}>Breed origin:</p>
                         <p className={styles.responce}>{props.origin} </p></li>
-                    <li>
+                    <li className={styles.item}>
                         <p className={styles.title}>Breed life-span:</p>
                         <p className={styles.responce}>{props.life_span} </p></li>
                 </ul>
