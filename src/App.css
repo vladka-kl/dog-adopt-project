@@ -5,6 +5,7 @@
   --main-font: "Epilogue", sans-serif;
   --standard-margin: 16px;
   --small-margin: 8px;
+  --large-margin: 74px;
   --main-font: 16px;
   --large-font: 24px;
   --standard-padding: 16px;
@@ -18,10 +19,10 @@
 }
 
 body {
-  background-color: var(--main-color);
   height: 100vh;
   width: 100vw;
   max-width: 100%;
+  background-color: var(--main-color);
 }
 
 /* ----- Restyling Elements of NPM Package for RandomDogSlider----- */

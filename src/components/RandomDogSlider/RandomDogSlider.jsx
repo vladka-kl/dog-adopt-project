@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./RandomDogSlider.module.css";
 import axios from "axios";
 
+// Handle API fetching: change to custom hook!
 const handleFetching = (url, setResp, setLoading) => {
   axios
     .get(url)
@@ -25,28 +26,29 @@ function RandomDogSlider() {
     handleFetching(url, setImages, setLoading);
   }, []);
 
+  //Track loading state
   if (loading) {
     return <h2> loading..</h2>;
   }
 
+  //Mapping through images
   const image = images.map((e) => <img src={e.image.url} alt={e.name} />);
 
-  const randomNumber = Math.floor(Math.random() * images.length) - 3;
-  console.log(image);
+  //Import random picture into slider
+  const randomNumber = Math.floor(Math.random() * images.length) - 5;
+  const randomArray = image.slice(randomNumber, randomNumber + 5);
 
-  const randomArray = image.slice(randomNumber, randomNumber + 3);
-  console.log(randomArray);
-
-  // const responsive = {
-  //   0: { items: 0 },
-  //   568: { items: 1 },
-  //   1024: { items: 2 },
-  // };
+  //Responsive number of pictures
+  const responsive = {
+    0: { items: 1 },
+    568: { items: 2 },
+    1024: { items: 3 },
+  };
 
   return (
     <div className={styles.wrapper}>
       <AliceCarousel
-        // responsive={responsive}
+        responsive={responsive}
         mouseTracking
         items={randomArray}
         controlsStrategy="alternate"

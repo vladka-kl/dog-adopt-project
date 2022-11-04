@@ -3,7 +3,7 @@ import { MenuDropdown } from "./MenuDropdown";
 import { NavBar } from "./NavBar";
 import styles from "./Header.module.css";
 
-export const Header = () => {
+const Header = () => {
   return (
     <div className={styles.mainHeader}>
       <Logo />
@@ -12,3 +12,5 @@ export const Header = () => {
     </div>
   );
 };
+
+export default Header;
