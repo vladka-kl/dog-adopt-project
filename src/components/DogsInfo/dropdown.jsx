@@ -5,7 +5,7 @@ const Dropdown = props => {
     return (
         <select onChange={props.onSelect}
             className={styles.dropdown} >
-            <option>Choose your breed</option>
+            <option>Choose a breed</option>
             {breedsData.map((singleBreed, index) =>
                 <option> {singleBreed.name}</option>
             )}
