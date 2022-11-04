@@ -7,6 +7,7 @@ import { breedsData } from "./data";
 import { BreedsInfoBox } from "./BreedsInfoBox";
 import { Dropdown } from "./dropdown";
 import Union1 from "./Union1.svg"
+import { Link } from 'react-router-dom';
 
 const DogsInfo = () => {
     const [index, setIndex] = useState(0);
@@ -37,11 +38,11 @@ const DogsInfo = () => {
             </div>
         </div>
         < div className={styles.buttonPlace}>
-            <a href="https://www.pdsa.org.uk/what-we-do/blog/10-amazing-facts-about-dogs">
+            <Link to='/breed-info'>
                 <button className={styles.buttonMore}>
-                    <p> More info</p>
+                    <p> More info </p>
                 </button>
-            </a>
+            </Link>
             <img src={Union1} className={styles.pawPic}></img>
         </div>
     </section >
