@@ -1,12 +1,16 @@
 * {
-    font-family: Arial;
+    font-family: 'Montserrat';
 }
 
 .card {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: rgb(236, 240, 232);
+
+        {
+        /*background-color: #DAC7B6;*/
+    }
+
     padding: 5px;
     padding-left: 5px;
     position: relative;
@@ -22,7 +26,6 @@
     position: absolute;
 }
 
-
 .infoBox {
     display: flex;
 }
@@ -37,14 +40,18 @@
     font-family: 'Montserrat';
     text-align: center;
     font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
+    font-weight: lighter;
+    font-size: 2 em;
     line-height: 150%;
     letter-spacing: 0.15em;
     text-transform: uppercase;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 
-.title3 {
+.title2 {
     font-family: 'Montserrat';
     text-align: center;
     font-weight: 400;
@@ -97,8 +104,8 @@
     border: 2px solid #A78D75;
     border-radius: 50px;
     color: rgba(98, 109, 85, 1);
+    font-size: 14px;
 }
-
 
 .dropdown {
     display: flex;
@@ -110,7 +117,7 @@
     font-family: 'Montserrat';
     color: white;
     border: 2px solid #A78D75;
-    border-radius: 300px;
+    border-radius: 40px;
     align-items: center;
     justify-content: center;
 }
@@ -126,4 +133,94 @@
 .pawPic {
     width: 12%;
     height: 12%;
+}
+
+@media only screen and (min-width: 600px) {
+    .container {
+        gap: 100px;
+    }
+
+    .pawPic {
+        width: 8%;
+        height: 8%;
+        padding-left: 10px;
+        margin-bottom: 30px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .title1 {
+        font-size: 29px;
+    }
+
+    .title2 {
+        font-size: 45px;
+    }
+
+    .responce {
+        font-size: 20px;
+    }
+
+    .pictureBox {
+        width: 65%;
+        margin-left: 170px;
+    }
+
+    .dropdown {
+        height: 50px;
+        width: 180px;
+    }
+
+    .buttonMore {
+        height: 50px;
+        width: 130px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        gap: 120px;
+    }
+
+    .pawPic {
+        width: 6%;
+        height: 6%;
+        padding-left: 10px;
+        margin-bottom: 35px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .title1 {
+        font-size: 35px;
+    }
+
+    .title2 {
+        font-size: 50px;
+    }
+
+    .responce {
+        font-size: 22px;
+    }
+
+    .pictureBox {
+        width: 65%;
+        margin-left: 260px;
+    }
+
+    .dropdown {
+        height: 60px;
+        width: 200px;
+    }
+
+    .buttonMore {
+        height: 60px;
+        width: 180px;
+        font-size: 22px;
+    }
 }

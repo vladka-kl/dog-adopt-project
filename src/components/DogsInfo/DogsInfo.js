@@ -21,11 +21,11 @@ const DogsInfo = () => {
     const selectedDog = breedsData.find(singleBreed => singleBreed.name === name)
     console.log(selectedDog)
     return <section className={styles.main}>
-        <h2 className={styles.title1}> Some info about breed </h2>
+        <h2 className={styles.title2}> Some info about breeds </h2>
         <Dropdown onSelect={handleClick} />
         <div id="DogCart" className={styles.card}>
             <div id="dataContainer">
-                <h3 className={styles.title3}> The best breed ever  </h3>
+                <h3 className={styles.title1}> The best breed ever  </h3>
                 <div className={styles.colorSquare}> </div>
                 {selectedDog && <BreedsInfoBox
                     key={index}
@@ -43,7 +43,7 @@ const DogsInfo = () => {
                     <p> More info </p>
                 </button>
             </Link>
-            <img src={Union1} className={styles.pawPic}></img>
+            <img src={Union1} className={styles.pawPic} alt="union1Paw"></img>
         </div>
     </section >
 }
