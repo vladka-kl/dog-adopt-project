@@ -1,0 +1,36 @@
+.nav-container {
+  color: white;
+  background-color: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5rem;
+}
+.logo-img {
+  margin-right: 5px;
+}
+.logo-text {
+  margin-top: 4px;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+}
+.li-ele {
+  margin-left: 10px;
+}
+.nav-elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-right: 10rem;
+}

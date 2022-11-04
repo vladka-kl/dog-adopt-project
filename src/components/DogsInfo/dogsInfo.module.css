@@ -1,0 +1,129 @@
+* {
+    font-family: Arial;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(236, 240, 232);
+    padding: 5px;
+    padding-left: 5px;
+    position: relative;
+    z-index: 0;
+}
+
+.colorSquare {
+    background-color: rgba(93, 104, 79, 1);
+    background-image: url("./Union2.svg");
+    width: 60%;
+    height: 60%;
+    z-index: -1;
+    position: absolute;
+}
+
+
+.infoBox {
+    display: flex;
+}
+
+.pictureBox {
+    display: flex;
+    width: 70%;
+    margin-left: 104px;
+}
+
+.title1 {
+    font-family: 'Montserrat';
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 150%;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.title3 {
+    font-family: 'Montserrat';
+    text-align: center;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 150%;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: 18px;
+    color: rgba(167, 141, 117, 1);
+    font-family: 'Montserrat';
+    font-style: normal;
+    line-height: 150%;
+    font-weight: 600;
+}
+
+.responce {
+    color: rgba(167, 141, 117, 1);
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.container {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.item {
+    align-self: center;
+    margin-bottom: 5px;
+    color: rgba(58, 58, 58, 1);
+    font-size: 16px;
+    font-family: 'Montserrat';
+    font-style: normal;
+
+}
+
+.buttonMore {
+    height: 40px;
+    width: 100px;
+    border: 2px solid #A78D75;
+    border-radius: 50px;
+    color: rgba(98, 109, 85, 1);
+}
+
+
+.dropdown {
+    display: flex;
+    margin-left: 30px;
+    height: 40px;
+    width: 150px;
+    background-color: rgba(98, 109, 85, 1);
+    margin-bottom: 30px;
+    font-family: 'Montserrat';
+    color: white;
+    border: 2px solid #A78D75;
+    border-radius: 300px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.buttonPlace {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.pawPic {
+    width: 12%;
+    height: 12%;
+}
