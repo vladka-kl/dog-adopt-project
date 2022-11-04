@@ -1,15 +1,15 @@
-.item {
-    width: 200px;
-    height: 120px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
 /* Resize images */
-.item img {
-    width: 100%;
-    height: auto;
+.wrapper img {
+  display: flex;
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--main-color);
 }
 
+@media screen and (min-width: 768px) {
+  .wrapper img {
+    width: 80%;
+  }
+}

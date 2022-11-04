@@ -1,0 +1,59 @@
+.containerBG {
+  background-image: url(./dog.png);
+  background-repeat: no-repeat;
+  background-size: 300px auto;
+  background-position: right 8px bottom 60px;
+}
+
+.welcomeBox {
+  background-color: var(--bg-color);
+  color: #ffffff85;
+  font-size: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 80vh;
+  margin-bottom: 24px;
+  padding: 16px;
+  background-image: url(./dog.png);
+  background-repeat: no-repeat;
+  background-size: 300px auto;
+  background-position: right 8px bottom -15.5px;
+}
+
+.emptyBox {
+  background-color: var(--main-color);
+  height: 50px;
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+}
+
+.adoptButton {
+  padding: var(--standard-padding);
+  border-radius: 12px;
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--main-color);
+  box-shadow: var(--standard-shadow);
+  text-shadow: var(--standard-shadow);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+}
+
+@media screen and (min-width: 768px) {
+  .containerBG {
+    background-size: 400px auto;
+    background-position: right 150px bottom 60px;
+  }
+  .welcomeBox {
+    font-size: 74px;
+    min-height: 80vh;
+    margin-bottom: 24px;
+    padding: 74px;
+    background-size: 400px auto;
+    background-position: right 150px bottom -15.5px;
+  }
+}
