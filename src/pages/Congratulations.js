@@ -5,9 +5,7 @@ import Header from "../components/Header/index";
 
 const CongratulationsPage = () => (
   <div className='LandingPage'>
-    <Header />
     <Congratulations />
-    <Footer />
   </div>
 );
 
