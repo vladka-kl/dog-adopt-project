@@ -10,6 +10,8 @@
 
 @media screen and (min-width: 768px) {
   .wrapper img {
-    width: 80%;
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
   }
 }
