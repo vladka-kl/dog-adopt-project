@@ -1,7 +1,9 @@
 import AliceCarousel from "react-alice-carousel";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useNavigate } from "react";
 import styles from "./RandomDogSlider.module.css";
 import axios from "axios";
+import { NavLink } from "react-router-dom";
+import Details from "../../pages/BreedsInfo";
 
 // Handle API fetching: change to custom hook!
 const handleFetching = (url, setResp, setLoading) => {
@@ -21,6 +23,7 @@ function RandomDogSlider() {
   const url = "https://api.thedogapi.com/v1/breeds";
   const [images, setImages] = useState([]);
   const [loading, setLoading] = useState(true);
+  // const navigate = useNavigate;
 
   useEffect(() => {
     handleFetching(url, setImages, setLoading);
@@ -32,7 +35,15 @@ function RandomDogSlider() {
   }
 
   //Mapping through images
-  const image = images.map((e) => <img src={e.image.url} alt={e.name} />);
+  const image = images.map((e) => (
+    <NavLink to={"/breed-info"}>
+      <img
+        src={e.image.url}
+        alt={e.name}
+        // onClick={navigate(`/breed-info/${id}`)}
+      />
+    </NavLink>
+  ));
 
   //Import random picture into slider
   const randomNumber = Math.floor(Math.random() * images.length) - 5;
