@@ -1,5 +1,6 @@
 .nav-container {
-  color:white;
+  color: white;
+  background-color: var(--bg-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,7 +10,7 @@
 .logo-container {
   display: flex;
   flex-direction: row;
-  margin-left: 10rem;
+  margin-left: 5rem;
 }
 .logo-img {
   margin-right: 5px;

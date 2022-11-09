@@ -1,26 +1,28 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Epilogue", sans-serif;
-}
-
-body {
-  background-color: black;
-  height: 100vh;
-  width: 100vw;
-  max-width: 100%;
-}
-
 :root {
-  --main-color: #eaeaea;
-  --main-font: "Gothic A1", sans-serif;
+  --accent-color: #5d684f;
+  --main-color: #fffbf7;
+  --bg-color: #a78d75;
+  --main-font: "Epilogue", sans-serif;
   --standard-margin: 16px;
   --small-margin: 8px;
+  --large-margin: 74px;
   --main-font: 16px;
   --large-font: 24px;
   --standard-padding: 16px;
   --standard-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font);
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  background-color: var(--main-color);
 }
 
 /* ----- Restyling Elements of NPM Package for RandomDogSlider----- */

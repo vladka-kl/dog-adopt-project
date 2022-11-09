@@ -1,6 +1,30 @@
 .mainHeader {
-  background: yellow;
+  background-color: var(--bg-color);
   display: flex;
   justify-content: space-between;
-  padding: 1em;
+  padding: 16px;
+}
+.headerLogo {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.logoText {
+  font-size: 14px;
+  margin-top: var(--small-margin);
+  color: var(--main-color);
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+h6 {
+  font-weight: bolder;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  .mainHeader {
+    padding: 16px 16px 16px 74px;
+  }
 }
