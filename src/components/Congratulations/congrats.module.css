@@ -1,3 +1,32 @@
+* {
+    font-family: 'Montserrat';
+}
+
 .congratsForm {
     font-family: Monserrat;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.pictureElement {
+    background-color: aqua;
+    align-self: center;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-style: normal;
+}
+
+.textElement {
+    background-color: bisque;
+    align-self: center;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-style: normal;
 }
