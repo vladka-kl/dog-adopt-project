@@ -1,12 +1,11 @@
-.containerBG {
-  background-image: url(./dog.png);
-  background-repeat: no-repeat;
-  background-size: 300px auto;
-  background-position: right 8px bottom 60px;
-}
-
 .welcomeBox {
-  background-color: var(--bg-color);
+  /* background: linear-gradient(
+    to bottom,
+    var(--bg-color) 80%,
+    var(--main-color) 20%
+  ); */
+  /* background-image: var(--bg-color),
+    linear-gradient(to bottom var(--bg-color) 80%, var(--main-color) 20%); */
   color: #ffffff85;
   font-size: 64px;
   display: flex;
@@ -15,15 +14,16 @@
   min-height: 80vh;
   margin-bottom: 24px;
   padding: 16px;
-  background-image: url(./dog.png);
-  background-repeat: no-repeat;
+  background: url(./Dog.png) no-repeat,
+    linear-gradient(to bottom, var(--bg-color) 80%, var(--main-color) 20%);
+  /* background-repeat: no-repeat;
   background-size: 300px auto;
-  background-position: right 8px bottom -15.5px;
+  background-position: right 8px bottom -15.5px; */
 }
 
-.emptyBox {
-  background-color: var(--main-color);
-  height: 50px;
+.welcomeBox:after {
+  background: yellow;
+  display: none;
 }
 
 .title {
@@ -42,6 +42,14 @@
   font-family: "Montserrat", sans-serif;
   font-weight: bolder;
 }
+
+/* .welcomeImage {
+  width: 500px;
+  height: auto;
+  position: relative;
+  left: 50%;
+  bottom: -30px;
+} */
 
 @media screen and (min-width: 768px) {
   .containerBG {

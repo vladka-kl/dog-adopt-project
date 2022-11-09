@@ -8,12 +8,15 @@ import Header from "../components/Header/index";
 import Welcome from "../components/welcome/Welcome";
 import { Footer } from "../components/Footer/Footer";
 
-const LandingPage = () => (
+const LandingPage = ({ selectedDog, setSelectedDog }) => (
   <div className="LandingPage">
     <Header />
     <Welcome />
     <AboutUsInfo title={RandomText.title} text={RandomText.text} />
-    <RandomDogSlider />
+    <RandomDogSlider
+      selectedDog={selectedDog}
+      setSelectedDog={setSelectedDog}
+    />
     <DogsInfo />
     <Footer />
   </div>

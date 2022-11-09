@@ -1,4 +1,5 @@
 import styles from "./welcome.module.css";
+// import Dog from "./Dog.png";
 
 const Welcome = () => {
   return (
@@ -11,7 +12,8 @@ const Welcome = () => {
         </h1>
         <button className={styles.adoptButton}>ADOPT</button>
       </div>
-      <div className={styles.emptyBox}></div>
+      {/* <img src={Dog} alt="dog" className={styles.welcomeImage} /> */}
+      {/* <div className={styles.emptyBox}></div> */}
     </section>
   );
 };
