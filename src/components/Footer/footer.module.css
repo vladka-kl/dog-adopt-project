@@ -5,6 +5,7 @@
     bottom: 0%;
     width: 100%;
     margin-bottom: 0px;
+    font-family: 'Montserrat';
 }
 
 
@@ -51,6 +52,16 @@
     right: 0%;
     top: 96%;
     bottom: 0%;
+}
+
+.checkBtn {
+    background-color: rgba(93, 104, 79, 1);
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    height: 36x;
+    width: 90px;
+    padding-left: 10px;
 }
 
 
