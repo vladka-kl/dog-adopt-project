@@ -7,12 +7,12 @@ const NavBar = () => {
     <nav className={styles.menu}>
       <ul className={styles.menuList}>
         <li className={styles.menuListItem}>
-          <Link to="./pages/LandingPage" className={styles.textLink}>
+          <Link to="/" className={styles.textLink}>
             About us
           </Link>
         </li>
         <li className={styles.menuListItem}>
-          <Link to="./pages/BreedsInfo" className={styles.textLink}>
+          <Link to="/breed-info" className={styles.textLink}>
             Breeds
           </Link>
         </li>
@@ -27,7 +27,7 @@ const NavBar = () => {
           </Link>
         </li>
         <li>
-          <Link to="./pages/ContactUs" className={styles.textLink}>
+          <Link to="/contact" className={styles.textLink}>
             Contact us
           </Link>
         </li>

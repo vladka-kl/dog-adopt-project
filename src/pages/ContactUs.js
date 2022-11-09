@@ -1,8 +1,11 @@
-import React from 'react';
+import React from "react";
+import ContactForm from "../components/ContactForm/Contactform";
+import Header from "../components/Header";
 
 const ContactUs = () => (
-  <div className='LandingPage'>
-    <h2>ContactUs</h2>
+  <div>
+    <Header />
+    <ContactForm />
   </div>
 );
 
