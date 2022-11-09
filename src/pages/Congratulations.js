@@ -1,9 +1,10 @@
 import React from 'react';
+import { Congratulations } from '../components/Congratulations/congratulations';
 
-const Congratulations = () => (
+const CongratulationsPage = () => (
   <div className='LandingPage'>
-    <h2>Congratulations</h2>
+    <Congratulations />
   </div>
 );
 
-export default Congratulations;
+export default CongratulationsPage;

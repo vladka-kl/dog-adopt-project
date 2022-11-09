@@ -7,7 +7,7 @@ import {
 import LandingPage from '../../pages/LandingPage';
 import Details from '../../pages/BreedsInfo';
 import Contact from '../../pages/ContactUs';
-import Congrats from '../../pages/Congratulations';
+import CongratulationsPage from '../../pages/Congratulations';
 
 const AppRoutes = ({ data = null }) => {
   // console.log(data);
@@ -18,9 +18,10 @@ const AppRoutes = ({ data = null }) => {
         <Route path='/' element={<LandingPage />} />
         <Route path='/breed-info' element={<Details />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/congrats' element={<Congrats />} />
+        <Route path='/congrats' element={<CongratulationsPage />} />
       </Routes>
     </Router>
-  );};
+  );
+};
 
 export default AppRoutes;
