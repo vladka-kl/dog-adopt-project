@@ -8,14 +8,15 @@ const Congratulations = () => {
             <h1> Hello! </h1>
             <div className={styles.container}>
                 <div classname={styles.pictureElement}>
-                    <img src={congratsPic} alt="congratsPic"></img>
+                    <img className={styles.pic} src={congratsPic} alt="congratsPic"></img>
                 </div>
                 <div className={styles.textElement}></div>
                 <div className={styles.textBlock}>
-                    <p> Congratulation   text ff </p>
+                    <title> Your new friend is on the way home</title>
+                    <p> Congratulation text </p>
                 </div>
             </div>
-            <Link to='/'>
+            <Link to='/' className={styles.buttonPlace}>
                 <button className={styles.backToHomeBtn}> To home page </button>
             </Link>
         </div>
