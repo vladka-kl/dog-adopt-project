@@ -16,7 +16,13 @@ const DogsInfo = () => {
         `https://api.thedogapi.com/v1/breeds`
     );
     const [selectedDogName, setSelectedDogName] = useState(null);
+    const dogsArray = dogsInfoResp.data;
 
+    useEffect(() => {
+        if (dogsArray?.length) {
+            setSelectedDogName(dogsArray[51].name)
+        }
+    }, [dogsInfoResp])
 
     if (isLoading) {
         return <h2>still in process, loading...</h2>;
@@ -26,7 +32,6 @@ const DogsInfo = () => {
         console.log("Error: ", errorResp);
         return <h2>an error has occurred, please contact the support</h2>;
     }
-    const dogsArray = dogsInfoResp.data;
 
     //const [index, setIndex] = useState(0);
     //const [name, setName] = useState("");
@@ -35,6 +40,7 @@ const DogsInfo = () => {
     const handleSelect = (event) => {
         setSelectedDogName(event.target.value)
     };
+
 
 
     const selectedDogData = dogsArray.find(dog => dog.name === selectedDogName)
