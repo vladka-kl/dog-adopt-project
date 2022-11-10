@@ -21,7 +21,7 @@ export const MenuDropdown = () => {
           </MenuItem>
           <SubMenu depth={0} index={0} />
           <MenuItem>
-            <Link to="./Breedsinfo">Breeds Info</Link>
+            <Link to="./SubMenu">Breeds Info</Link>
           </MenuItem>
           <MenuItem>
             <Link to="./ContactUs">Contact us</Link>
