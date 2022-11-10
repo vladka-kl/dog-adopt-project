@@ -7,3 +7,11 @@
   margin-right: auto;
   background-color: var(--main-color);
 }
+
+@media screen and (min-width: 768px) {
+  .wrapper img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+  }
+}

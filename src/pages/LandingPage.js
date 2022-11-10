@@ -9,13 +9,15 @@ import Welcome from "../components/welcome/Welcome";
 import Steps from '../components/Steps/Steps';
 import { Footer } from "../components/Footer/Footer";
 
-const LandingPage = () => (
-  <div className='LandingPage'>
+const LandingPage = ({ selectedDog, setSelectedDog }) => (
+  <div className="LandingPage">
     <Header />
     <Welcome />
     <AboutUsInfo title={RandomText.title} text={RandomText.text} />
-    <Steps />
-    <RandomDogSlider />
+    <RandomDogSlider
+      selectedDog={selectedDog}
+      setSelectedDog={setSelectedDog}
+    />
     <DogsInfo />
     <Footer />
   </div>
