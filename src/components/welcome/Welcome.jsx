@@ -8,9 +8,9 @@ const Welcome = () => {
     <section className={styles.containerBG}>
       <div className={styles.welcomeBox}>
         <h1 className={styles.title}>
-          ADOPT
-          <br />
-          DON'T BUY
+          <strong>
+            <em>ADOPT DON'T BUY</em>
+          </strong>
         </h1>
         <button className={styles.adoptButton}>ADOPT</button>
       </div>

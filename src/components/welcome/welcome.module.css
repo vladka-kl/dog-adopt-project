@@ -2,11 +2,11 @@
   display: flex;
   width: 100%;
   background: var(--bg-color);
-  background-size: 50% auto;
-  background-position: right 8px bottom -15.5px;
-  min-height: 80vh;
+  /* background-size: 50% auto; */
+  /* background-position: right 8px bottom -15.5px; */
+  /* min-height: 80vh; */
   margin-bottom: 50px;
-  padding-left: 200px
+  /* padding-left: 200px */
 }
 
 .welcomeBox {
@@ -22,9 +22,9 @@
 .title {
   font-size: 144px;
   color: #ffffff85;
-  font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 4rem;
+  /* font-weight: bold; */
+  /* font-family: 'Montserrat', sans-serif; */
+  font-size: 8rem;
   line-height: 1.5;
   margin: 100px auto 100px auto;
 }
@@ -42,12 +42,16 @@
 }
 
 .mainDog {
-position: relative;
-width: 50%;
+/* position: relative; */
+/* width: 50%; */
+
 }
 
 .mainDogImg {
-position: absolute;
+/* position: absolute; */
+position: relative;
+top: 15em;
+width: 55rem;
 }
 
 @media screen and (max-width: 650px) {
