@@ -6,7 +6,7 @@ import React from 'react';
 export const Logo = () => {
   return (
     <div className={styles.headerLogo}>
-      <Link to="./pages/LandingPage">
+      <Link to="/">
         <img src={logo}></img>
       </Link>
       <div className={styles.logoText}>

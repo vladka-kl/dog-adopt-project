@@ -4,9 +4,8 @@ import {
   MenuItem,
 } from "@react-md/menu";
 import { Configuration } from "@react-md/layout";
-import { BreedList } from "./BreedList";
+import { SubMenu } from "./SubMenu";
 import { Link } from "react-router-dom";
-import React from 'react';
 
 export const MenuDropdown = () => {
   return (
@@ -24,10 +23,10 @@ export const MenuDropdown = () => {
           </MenuItem>
           <BreedList depth={0} index={0} buttonChildren={undefined} />
           <MenuItem>
-            <Link to='./FullDogsInfo'>Breeds Info</Link>
+            <Link to="./Breedsinfo">Breeds Info</Link>
           </MenuItem>
           <MenuItem>
-            <Link to='./ContactForm'>Contact us</Link>
+            <Link to="./ContactUs">Contact us</Link>
           </MenuItem>
         </DropdownMenu>
       </MenuConfigurationProvider>

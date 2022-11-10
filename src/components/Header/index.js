@@ -8,8 +8,8 @@ const Header = () => {
   return (
     <div className={styles.mainHeader}>
       <Logo />
-      <MenuDropdown />
-      {/* <NavBar /> */}
+      {/* <MenuDropdown /> */}
+      <NavBar />
     </div>
   );
 };

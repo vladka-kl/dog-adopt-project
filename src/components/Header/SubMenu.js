@@ -1,7 +1,7 @@
 import { DropdownMenu, MenuItem } from "@react-md/menu";
 import React from 'react';
 
-export const BreedList = ({ index, depth, buttonChildren }) => {
+export const SubMenu = ({ index, depth, buttonChildren }) => {
   return (
     <div>
       <DropdownMenu
