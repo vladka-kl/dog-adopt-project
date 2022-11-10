@@ -1,0 +1,34 @@
+:root {
+  --accent-color: #5d684f;
+  --main-color: #fffbf7;
+  --bg-color: #a78d75;
+  --main-font: "Epilogue", sans-serif;
+  --standard-margin: 16px;
+  --small-margin: 8px;
+  --large-margin: 74px;
+  --main-font-size: 16px;
+  --large-font-size: 24px;
+  --standard-padding: 16px;
+  --standard-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
+}
+
+.congratulations {
+  color: var(--accent-color);
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  box-shadow: var(--standard-shadow);
+  text-shadow: var(--standard-shadow);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+}
+.headline {
+  font-size: 100px;
+}
+.subText {
+  margin-top: var(--large-margin);
+  font-size: 40px;
+}
