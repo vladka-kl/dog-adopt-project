@@ -6,6 +6,7 @@ import {
 import { Configuration } from "@react-md/layout";
 import { SubMenu } from "./SubMenu";
 import { Link } from "react-router-dom";
+import React from 'react';
 
 export const MenuDropdown = () => {
   return (
@@ -21,12 +22,12 @@ export const MenuDropdown = () => {
           <MenuItem>
             <Link to='./RandomDog'>Random Dog Pic</Link>
           </MenuItem>
-          <BreedList depth={0} index={0} buttonChildren={undefined} />
+          <SubMenu depth={0} index={0} buttonChildren={undefined} />
           <MenuItem>
-            <Link to="./Breedsinfo">Breeds Info</Link>
+            <Link to='./Breedsinfo'>Breeds Info</Link>
           </MenuItem>
           <MenuItem>
-            <Link to="./ContactUs">Contact us</Link>
+            <Link to='./ContactUs'>Contact us</Link>
           </MenuItem>
         </DropdownMenu>
       </MenuConfigurationProvider>
