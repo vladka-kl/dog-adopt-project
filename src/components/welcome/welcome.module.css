@@ -29,16 +29,6 @@
   margin: 100px auto 100px auto;
 }
 
-.emptyBox {
-  background-color: var(--main-color);
-  height: 50px;
-}
-
-.title {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bolder;
-}
-
 .adoptButton {
   padding: var(--standard-padding);
   border-radius: 12px;
@@ -50,13 +40,16 @@
   font-family: "Montserrat", sans-serif;
   font-weight: bolder;
 }
+
 .mainDog {
 position: relative;
 width: 50%;
 }
+
 .mainDogImg {
 position: absolute;
 }
+
 @media screen and (max-width: 650px) {
   .welcomeBox {
   }
