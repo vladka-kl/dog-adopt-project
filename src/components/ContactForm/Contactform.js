@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./ContactForm.module.css";
 
-const FORM_ENDPOINT = ""; // TODO - fill on the later step
-
 const ContactForm = () => {
   return (
     <form className={styles.main}>

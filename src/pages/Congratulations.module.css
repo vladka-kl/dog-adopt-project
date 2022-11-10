@@ -17,11 +17,18 @@
   font-size: 100px;
   display: flex;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   min-height: 100vh;
   box-shadow: var(--standard-shadow);
   text-shadow: var(--standard-shadow);
   font-family: "Montserrat", sans-serif;
   font-weight: bolder;
+}
+.headline {
+  font-size: 100px;
+}
+.subText {
+  margin-top: var(--large-margin);
+  font-size: 40px;
 }

@@ -7,7 +7,12 @@ const Congratulations = () => (
   <div>
     <Header />
     <Confetti />
-    <h2 className={styles.congratulations}>Congratulations</h2>
+    <div className={styles.congratulations}>
+      <h2 class={styles.headline}>Congratulations!</h2>
+      <p class={styles.subText}>
+        You will soon be the Owner of a cute Dog ▼・ᴥ・▼
+      </p>
+    </div>
   </div>
 );
 
