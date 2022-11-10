@@ -1,34 +1,32 @@
+.containerBG {
+  display: flex;
+  width: 100%;
+  background: var(--bg-color);
+  background-size: 50% auto;
+  background-position: right 8px bottom -15.5px;
+  min-height: 80vh;
+  margin-bottom: 50px;
+  padding-left: 200px
+}
+
 .welcomeBox {
-  /* background: linear-gradient(
-    to bottom,
-    var(--bg-color) 80%,
-    var(--main-color) 20%
-  ); */
-  /* background-image: var(--bg-color),
-    linear-gradient(to bottom var(--bg-color) 80%, var(--main-color) 20%); */
-  color: #ffffff85;
-  font-size: 64px;
+  padding-bottom: 16px;
+  padding-left: 100px;
+  /* margin-bottom: 15%; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  min-height: 80vh;
-  margin-bottom: 24px;
-  padding: 16px;
-  background: url(./Dog.png) no-repeat,
-    linear-gradient(to bottom, var(--bg-color) 80%, var(--main-color) 20%);
-  /* background-repeat: no-repeat;
-  background-size: 300px auto;
-  background-position: right 8px bottom -15.5px; */
-}
-
-.welcomeBox:after {
-  background: yellow;
-  display: none;
+  justify-content: center;
 }
 
 .title {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bolder;
+  font-size: 144px;
+  color: #ffffff85;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  line-height: 1.5;
+  margin: 100px auto 100px auto;
 }
 
 .adoptButton {
@@ -43,25 +41,20 @@
   font-weight: bolder;
 }
 
-/* .welcomeImage {
-  width: 500px;
-  height: auto;
-  position: relative;
-  left: 50%;
-  bottom: -30px;
-} */
+.mainDog {
+position: relative;
+width: 50%;
+}
 
-@media screen and (min-width: 768px) {
-  .containerBG {
-    background-size: 400px auto;
-    background-position: right 150px bottom 60px;
-  }
+.mainDogImg {
+position: absolute;
+}
+
+@media screen and (max-width: 650px) {
   .welcomeBox {
-    font-size: 74px;
-    min-height: 80vh;
-    margin-bottom: 24px;
-    padding: 74px;
-    background-size: 400px auto;
-    background-position: right 150px bottom -15.5px;
+  }
+
+  .title {
+    font-size: 100px;
   }
 }

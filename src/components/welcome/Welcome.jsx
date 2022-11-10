@@ -1,5 +1,7 @@
-import styles from "./welcome.module.css";
-// import Dog from "./Dog.png";
+
+import React from 'react';
+import styles from './welcome.module.css';
+import mainDog from './dog.png';
 
 const Welcome = () => {
   return (
@@ -12,8 +14,9 @@ const Welcome = () => {
         </h1>
         <button className={styles.adoptButton}>ADOPT</button>
       </div>
-      {/* <img src={Dog} alt="dog" className={styles.welcomeImage} /> */}
-      {/* <div className={styles.emptyBox}></div> */}
+      <div className={styles.mainDog}>
+        <img className={styles.mainDogImg} src={mainDog} alt='' />
+      </div>
     </section>
   );
 };

@@ -23,6 +23,8 @@ body {
   width: 100vw;
   max-width: 100%;
   background-color: var(--main-color);
+    font-family: 'Montserrat-Thin', sans-serif;
+
 }
 
 /* ----- Restyling Elements of NPM Package for RandomDogSlider----- */
