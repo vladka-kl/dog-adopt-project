@@ -19,7 +19,7 @@ const DogsInfo = () => {
     const dogsArray = dogsInfoResp.data;
 
     useEffect(() => {
-        if (dogsArray?.length) {
+        if (dogsArray && dogsArray.length) {
             setSelectedDogName(dogsArray[51].name)
         }
     }, [dogsInfoResp])
