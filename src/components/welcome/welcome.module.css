@@ -1,34 +1,32 @@
 .containerBG {
-  background-image: url(./dog.png);
-  background-repeat: no-repeat;
-  background-size: 300px auto;
-  background-position: right 8px bottom 60px;
+  display: flex;
+  width: 100%;
+  background: var(--bg-color);
+  background-size: 50% auto;
+  background-position: right 8px bottom -15.5px;
+  min-height: 80vh;
+  margin-bottom: 50px;
+  padding-left: 200px
 }
 
 .welcomeBox {
-  background-color: var(--bg-color);
-  color: #ffffff85;
-  font-size: 64px;
+  padding-bottom: 16px;
+  padding-left: 100px;
+  /* margin-bottom: 15%; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  min-height: 80vh;
-  margin-bottom: 24px;
-  padding: 16px;
-  background-image: url(./dog.png);
-  background-repeat: no-repeat;
-  background-size: 300px auto;
-  background-position: right 8px bottom -15.5px;
-}
-
-.emptyBox {
-  background-color: var(--main-color);
-  height: 50px;
+  justify-content: center;
 }
 
 .title {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bolder;
+  font-size: 144px;
+  color: #ffffff85;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  line-height: 1.5;
+  margin: 100px auto 100px auto;
 }
 
 .adoptButton {
@@ -43,17 +41,20 @@
   font-weight: bolder;
 }
 
-@media screen and (min-width: 768px) {
-  .containerBG {
-    background-size: 400px auto;
-    background-position: right 150px bottom 60px;
-  }
+.mainDog {
+position: relative;
+width: 50%;
+}
+
+.mainDogImg {
+position: absolute;
+}
+
+@media screen and (max-width: 650px) {
   .welcomeBox {
-    font-size: 74px;
-    min-height: 80vh;
-    margin-bottom: 24px;
-    padding: 74px;
-    background-size: 400px auto;
-    background-position: right 150px bottom -15.5px;
+  }
+
+  .title {
+    font-size: 100px;
   }
 }

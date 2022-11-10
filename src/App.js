@@ -2,9 +2,15 @@
 import React, { useEffect, useState } from "react";
 import AppRoutes from "./components/Route/AppRoutes";
 import axios from "axios";
+import { Route, Routes } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import Congratulations from "./pages/Congratulations";
+import Details from "./pages/Details";
+import ContactUs from "./pages/ContactUs";
 
-function App(name, age) {
+function App() {
   const [data, setData] = useState();
+  const [selectedDog, setSelectedDog] = useState({});
 
   useEffect(() => {
     axios
@@ -25,7 +31,28 @@ function App(name, age) {
       });
   }, []);
 
-  return <div className="App">{data && <AppRoutes data={data} />}</div>;
+  return (
+    <div className="App">
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <LandingPage
+              selectedDog={selectedDog}
+              setSelectedDog={setSelectedDog}
+            />
+          }
+        />
+        <Route
+          path="/breed-info"
+          element={<Details selectedDog={selectedDog} />}
+        />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/congrats" element={<Congratulations />} />
+      </Routes>
+      {/* {data && <AppRoutes data={data} />} */}
+    </div>
+  );
 }
 
 export default App;
