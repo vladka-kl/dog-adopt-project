@@ -20,7 +20,7 @@ const LandingPage = ({ selectedDog, setSelectedDog }) => (
       setSelectedDog={setSelectedDog}
     />
     <DogsInfo />
-    <Footer />
+    {/*<Footer />*/}
   </div>
 );
 
