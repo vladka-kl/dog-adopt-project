@@ -2,7 +2,7 @@ import styles from "./AboutUsInfo.module.css";
 import React from "react";
 import dogIcon from "../../assets/icons/dogIcon.svg";
 import find from "../../assets/icons/find.svg";
-import prepare from "../../assets/icons/prepare.svg";
+import prepare from "../../assets/icons/prepareAboutUs.svg";
 
 const icons = [dogIcon, find, prepare];
 const texts = [
@@ -14,7 +14,6 @@ function AboutUsInfo({ text, title }) {
   return (
     <section className={styles.aboutUs}>
       <h2 className={styles.title}>{title}</h2>
-      {/* <br /> */}
       <p className={styles.text}>{text}</p>
       <div className={styles.iconsContainer}>
         {icons.map((icon, i) => {

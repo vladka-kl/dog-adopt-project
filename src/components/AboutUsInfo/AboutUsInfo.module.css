@@ -20,6 +20,8 @@
   padding: var(--standard-padding) 2rem;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
+  line-height: 160%;
+  letter-spacing: 10%;
 }
 
 .iconsContainer {
@@ -34,14 +36,13 @@
 }
 
 .iconWrapper {
-  padding: var(--standard-padding) 2rem;
   background-color: var(--main-color);
   width: 50px;
   height: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: space-around;
+  align-items: center;
 }
 
 .iconText {
@@ -54,6 +55,9 @@
 .iconClass {
   width: 45px;
   height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .textsIcon {
@@ -61,6 +65,7 @@
   font-weight: lighter;
   font-size: 18px;
   width: 100px;
+  line-height: 150%;
 }
 
 @media screen and (min-width: 768px) {
