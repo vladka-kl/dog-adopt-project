@@ -1,14 +1,15 @@
 .aboutUs {
   display: flex;
   flex-direction: column;
-  padding: 0 20%;
+  padding: 10% 20%;
   justify-content: center;
   color: rgba(93, 104, 79, 0.7);
   background-color: var(--main-color);
-  margin-top: 20px;
+  font-size: 24px;
 }
 
 .aboutUs h2 {
+  padding: var(--standard-padding) 2rem;
   display: flex;
   justify-content: center;
   font-family: "Montserrat", sans-serif;
@@ -22,6 +23,7 @@
 }
 
 .iconsContainer {
+  padding: var(--standard-padding) 2rem;
   /* display: flex; */
   background-color: #fffbf7;
   display: flex;
@@ -32,6 +34,7 @@
 }
 
 .iconWrapper {
+  padding: var(--standard-padding) 2rem;
   background-color: var(--main-color);
   width: 50px;
   height: 50px;
@@ -56,7 +59,7 @@
 .textsIcon {
   color: var(--accent-color);
   font-weight: lighter;
-  font-size: 14px;
+  font-size: 18px;
   width: 100px;
 }
 
