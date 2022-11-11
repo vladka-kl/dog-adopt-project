@@ -42,16 +42,15 @@
 }
 
 .mainDog {
-/* position: relative; */
-/* width: 50%; */
-
+  /* position: relative; */
+  /* width: 50%; */
 }
 
 .mainDogImg {
-/* position: absolute; */
-position: relative;
-top: 15em;
-width: 55rem;
+  /* position: absolute; */
+  position: relative;
+  top: 15em;
+  width: 55rem;
 }
 
 @media screen and (max-width: 650px) {
