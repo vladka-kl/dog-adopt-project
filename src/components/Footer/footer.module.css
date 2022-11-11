@@ -21,8 +21,10 @@
     background-color: rgba(167, 141, 117, 1);
     width: 50%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
 
 .picture {
@@ -77,6 +79,17 @@
     .picBlock {
         max-height: 100px;
     }
+
+    .colorBlock {
+        gap: 15px;
+    }
+
+    .checkBtn {
+        font-size: 17px;
+        height: 35px;
+        width: 130px;
+        padding-left: 10px;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -84,11 +97,23 @@
         font-size: 18px;
     }
 
+
     .text {
         font-size: 22px;
     }
 
     .picBlock {
         max-height: 150px;
+    }
+
+    .checkBtn {
+        font-size: 22px;
+        height: 45x;
+        width: 180px;
+        padding-left: 10px;
+    }
+
+    .colorBlock {
+        gap: 15px;
     }
 }
