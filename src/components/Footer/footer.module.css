@@ -1,14 +1,17 @@
 .footer {
+    display: flex;
+    flex-direction: column;
     left: 0%;
     right: 0%;
     top: 92.24%;
     bottom: 0%;
     width: 100%;
     margin-bottom: 0px;
+    font-family: 'Montserrat';
 }
 
 
-.picBlock {
+.container {
     display: flex;
     flex-direction: row;
     left: 0%;
@@ -18,14 +21,29 @@
 
 .colorBlock {
     background-color: rgba(167, 141, 117, 1);
-    width: 50%;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 10px;
+}
+
+.picBlock {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
 }
 
 .picture {
-    width: 50%;
+    border: none !important;
+    width: auto !important;
+    height: auto;
+    max-width: 100% !important;
+    cursor: pointer;
 }
 
 .text {
@@ -53,31 +71,78 @@
     bottom: 0%;
 }
 
+.checkBtn {
+    background-color: rgba(93, 104, 79, 1);
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    height: 36x;
+    width: 90px;
+    padding-left: 10px;
+}
+
 
 @media only screen and (min-width: 600px) {
     .copyright {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .text {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .picBlock {
-        max-height: 100px;
+        display: flex;
+        max-height: 150px;
+        justify-content: end;
+        position: relative;
     }
+
+    .colorBlock {
+        gap: 15px;
+        width: 150%;
+        position: relative;
+    }
+
+    .checkBtn {
+        font-size: 17px;
+        height: 35px;
+        width: 130px;
+        padding-left: 10px;
+    }
+
 }
 
 @media only screen and (min-width: 1024px) {
     .copyright {
-        font-size: 18px;
+        font-size: 20px;
+        line-height: 19px;
+        padding-top: 7px;
+        padding-bottom: 7px;
     }
 
+
     .text {
-        font-size: 22px;
+        font-size: 28px;
     }
 
     .picBlock {
+        display: flex;
         max-height: 150px;
+        justify-content: end;
+        position: relative;
+    }
+
+    .checkBtn {
+        font-size: 22px;
+        height: 45x;
+        width: 180px;
+        padding-left: 10px;
+    }
+
+    .colorBlock {
+        gap: 15px;
+        width: 200%;
+        position: relative;
     }
 }
