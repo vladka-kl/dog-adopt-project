@@ -54,8 +54,7 @@
 }
 
 @media screen and (max-width: 650px) {
-  .welcomeBox {
-  }
+  .welcomeBox {}
 
   .title {
     font-size: 100px;
