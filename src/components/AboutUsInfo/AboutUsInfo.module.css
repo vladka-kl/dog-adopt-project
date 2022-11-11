@@ -19,6 +19,43 @@
   font-weight: bold;
 }
 
+.iconsContainer {
+  /* display: flex; */
+  background-color: #fffbf7;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.iconWrapper {
+  background-color: var(--main-color);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.iconClass {
+  width: 45px;
+  height: 45px;
+}
+
+.textsIcon {
+  color: var(--accent-color);
+  font-weight: lighter;
+  font-size: 14px;
+  width: 100px;
+}
+
 @media screen and (min-width: 768px) {
   .text {
     padding: var(--standard-padding) 5rem;
