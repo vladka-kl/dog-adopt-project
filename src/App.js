@@ -1,12 +1,11 @@
-// @ts-nocheck
-import React, { useEffect, useState } from "react";
-import AppRoutes from "./components/Route/AppRoutes";
-import axios from "axios";
-import { Route, Routes } from "react-router-dom";
-import LandingPage from "./pages/LandingPage";
-import Congratulations from "./pages/Congratulations";
-import Details from "./pages/Details";
-import ContactUs from "./pages/ContactUs";
+import React, { useEffect, useState } from 'react';
+import AppRoutes from './components/Route/AppRoutes';
+import axios from 'axios';
+import { Route, Routes } from 'react-router-dom';
+import LandingPage from './pages/LandingPage';
+import Congratulations from './pages/Congratulations';
+import Details from './pages/Details';
+import ContactUs from './pages/ContactUs';
 
 function App() {
   const [data, setData] = useState();
@@ -14,17 +13,21 @@ function App() {
 
   useEffect(() => {
     axios
-      .get("https://dog.ceo/api/breeds/list/all")
-      .then((response) => {
+      .get('https://dog.ceo/api/breeds/list/all')
+      .then(response => {
         // handle success
-        if (response && response.data && response.data.status === "success") {
+        if (
+          response &&
+          response.data &&
+          response.data.status === 'success'
+        ) {
           console.log(response.data.message);
           setData(response.data.message);
         } else {
           setData();
         }
       })
-      .catch((error) => {
+      .catch(error => {
         // handle error
         console.log(error);
         setData();
@@ -32,10 +35,10 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
+    <div className='App'>
       <Routes>
         <Route
-          path="/"
+          path='/'
           element={
             <LandingPage
               selectedDog={selectedDog}
@@ -44,11 +47,11 @@ function App() {
           }
         />
         <Route
-          path="/breed-info"
+          path='/breed-info'
           element={<Details selectedDog={selectedDog} />}
         />
-        <Route path="/contact" element={<ContactUs />} />
-        <Route path="/congrats" element={<Congratulations />} />
+        <Route path='/contact' element={<ContactUs />} />
+        <Route path='/congrats' element={<Congratulations />} />
       </Routes>
       {/* {data && <AppRoutes data={data} />} */}
     </div>
