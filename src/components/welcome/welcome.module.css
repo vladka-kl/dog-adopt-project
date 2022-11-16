@@ -20,11 +20,10 @@
 }
 
 .title {
-  font-size: 144px;
   color: #ffffff85;
   /* font-weight: bold; */
   /* font-family: 'Montserrat', sans-serif; */
-  font-size: 8rem;
+  font-size: 5rem;
   line-height: 1.5;
   margin: 100px auto 100px auto;
 }
@@ -49,12 +48,13 @@
 .mainDogImg {
   /* position: absolute; */
   position: relative;
-  top: 15em;
-  width: 55rem;
+  top: 14em;
+  width: 50rem;
 }
 
 @media screen and (max-width: 650px) {
-  .welcomeBox {}
+  .welcomeBox {
+  }
 
   .title {
     font-size: 100px;

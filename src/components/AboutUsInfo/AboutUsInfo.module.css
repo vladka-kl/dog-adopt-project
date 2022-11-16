@@ -25,19 +25,18 @@
 }
 
 .iconsContainer {
-  padding: var(--standard-padding) 2rem;
+  padding: var(--standard-padding) 1rem;
   /* display: flex; */
   background-color: #fffbf7;
   display: flex;
   justify-content: space-around;
   /* flex-wrap: wrap; */
   margin-top: 20px;
-  row-gap: 10px;
 }
 
 .iconWrapper {
   background-color: var(--main-color);
-  width: 50px;
+  width: 60px;
   height: 50px;
   display: flex;
   flex-wrap: wrap;
@@ -53,7 +52,7 @@
 }
 
 .iconClass {
-  width: 45px;
+  width: 60px;
   height: 45px;
   display: flex;
   justify-content: center;
