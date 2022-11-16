@@ -1,8 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { Dropdown } from "../DogsInfo/dropdown";
 import styles from "./Header.module.css";
 
-const NavBar = () => {
+const NavBar = ({ dogsInfoResp, setSelectedDog, selectedDog }) => {
+  const navigate = useNavigate();
+  const handleSelect = (event) => {
+    setSelectedDog(dogsInfoResp.find((dog) => dog.name === event.target.value));
+    navigate("/breed-info");
+  };
+
   return (
     <nav className={styles.menu}>
       <ul className={styles.menuList}>
@@ -12,20 +20,15 @@ const NavBar = () => {
           </Link>
         </li>
         <li className={styles.menuListItem}>
-          <Link to="/breed-info" className={styles.textLink}>
-            Breeds
-          </Link>
+          <Dropdown
+            dogsInfoResp={dogsInfoResp}
+            onSelect={handleSelect}
+            className={styles.desktopNavbar}
+            selectedDog={selectedDog}
+            isHeader
+          />
         </li>
-        <li className={styles.menuListItem}>
-          <Link to="./RandomDog" className={styles.textLink}>
-            Random Dog Pic
-          </Link>
-        </li>
-        <li className={styles.menuListItem}>
-          <Link to="./FullDogsInfo" className={styles.textLink}>
-            Breeds Info
-          </Link>
-        </li>
+
         <li>
           <Link to="/contact" className={styles.textLink}>
             Contact us
