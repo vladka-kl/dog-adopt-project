@@ -46,7 +46,6 @@ function RandomDogSlider({ selectedDog, setSelectedDog }) {
     </NavLink>
   ));
 
-  console.log(selectedDog);
   //Import random picture into slider
   const randomNumber = Math.floor(Math.random() * images.length) - 5;
   const randomArray = image.slice(randomNumber, randomNumber + 5);
