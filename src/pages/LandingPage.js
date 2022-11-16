@@ -17,12 +17,17 @@ const LandingPage = ({ selectedDog, setSelectedDog, dogsInfoResp }) => (
       selectedDog={selectedDog}
       setSelectedDog={setSelectedDog}
     />
+<<<<<<< HEAD
     <DogsInfo
       selectedDog={selectedDog}
       setSelectedDog={setSelectedDog}
       dogsInfoResp={dogsInfoResp}
     />
     <Footer />
+=======
+    <DogsInfo />
+    {/*<Footer />*/}
+>>>>>>> 35d68b7b06989689df1d464454e85fabce5f1fa8
   </div>
 );
 
