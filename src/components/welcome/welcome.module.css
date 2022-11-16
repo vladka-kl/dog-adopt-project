@@ -2,22 +2,26 @@
   display: flex;
   width: 100%;
   background: var(--bg-color);
-  /* background-size: 50% auto; */
-  /* background-position: right 8px bottom -15.5px; */
-  /* min-height: 80vh; */
+  background-color: var(--bg-color);
   margin-bottom: 50px;
-  /* padding-left: 200px */
 }
 
 .welcomeBox {
+  font-weight: bolder;
+}
+
+.mainDogImg {
+  display: none;
+}
+
+/* .welcomeBox {
   padding-bottom: 16px;
   padding-left: 100px;
-  /* margin-bottom: 15%; */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-}
+} */
 
 .title {
   color: #ffffff85;
@@ -40,20 +44,12 @@
   font-weight: bolder;
 }
 
-.mainDog {
-  /* position: relative; */
-  /* width: 50%; */
-}
-
-.mainDogImg {
-  /* position: absolute; */
-  position: relative;
-  top: 14em;
-  width: 50rem;
-}
-
-@media screen and (max-width: 650px) {
-  .welcomeBox {
+@media screen and (min-width: 768px) {
+  .mainDogImg {
+    display: inline-block;
+    position: relative;
+    top: 15em;
+    width: 55rem;
   }
 
   .title {
