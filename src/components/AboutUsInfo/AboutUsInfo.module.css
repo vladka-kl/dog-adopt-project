@@ -1,14 +1,17 @@
 .aboutUs {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: var(--standard-padding);
+  padding: 10% 20%;
   justify-content: center;
   color: rgba(93, 104, 79, 0.7);
   background-color: var(--main-color);
+  font-size: 24px;
 }
 
 .aboutUs h2 {
+  padding: var(--standard-padding) 2rem;
+  display: flex;
+  justify-content: center;
   font-family: "Montserrat", sans-serif;
   font-weight: lighter;
 }
@@ -17,10 +20,56 @@
   padding: var(--standard-padding) 2rem;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
+  line-height: 160%;
+  letter-spacing: 10%;
+}
+
+.iconsContainer {
+  padding: var(--standard-padding) 2rem;
+  /* display: flex; */
+  background-color: #fffbf7;
+  display: flex;
+  justify-content: space-around;
+  /* flex-wrap: wrap; */
+  margin-top: 20px;
+  row-gap: 10px;
+}
+
+.iconWrapper {
+  background-color: var(--main-color);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.iconText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.iconClass {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textsIcon {
+  color: var(--accent-color);
+  font-weight: lighter;
+  font-size: 18px;
+  width: 100px;
+  line-height: 150%;
 }
 
 @media screen and (min-width: 768px) {
-  .text {
-    padding: var(--standard-padding) 5rem;
-  }
+  /* .text {
+    padding: 0 74px 0 74px;
+  } */
 }

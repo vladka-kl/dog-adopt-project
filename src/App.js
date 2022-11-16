@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import AppRoutes from './components/Route/AppRoutes';
-import axios from 'axios';
-import { Route, Routes } from 'react-router-dom';
-import LandingPage from './pages/LandingPage';
-import Congratulations from './pages/Congratulations';
-import Details from './pages/Details';
-import ContactUs from './pages/ContactUs';
+// @ts-nocheck
+import React, { useEffect, useState } from "react";
+import AppRoutes from "./components/Route/AppRoutes";
+import axios from "axios";
+import { Route, Routes } from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import Congratulations from "./pages/Congratulations";
+import Details from "./pages/Details";
+import ContactUs from "./pages/ContactUs";
+import {Footer} from "./components/Footer/Footer";
 
 function App() {
   const [data, setData] = useState();
@@ -54,6 +56,7 @@ function App() {
         <Route path='/congrats' element={<Congratulations />} />
       </Routes>
       {/* {data && <AppRoutes data={data} />} */}
+      <Footer />
     </div>
   );
 }
