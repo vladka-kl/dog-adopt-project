@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 const useFetch = url => {
-  const [data, setData] = useState([]);
+  const [dataResp, setData] = useState([]);
+  const [errorResp, setError] = useState(null);
+  const [loading, isLoading] = useState(false);
 
   useEffect(() => {
     axios
@@ -14,18 +16,19 @@ const useFetch = url => {
           response.data &&
           response.data.status === 'success'
         ) {
-          setData(response.data.message);
+          setData(response.data);
         } else {
           setData([]);
         }
       })
       .catch(error => {
         // handle error
-        setData([]);
-      });
-  }, []);
+        setError(error);
+      })
+      .finally(() => isLoading(false));
+  }, [url]);
 
-  return [data];
+  return [dataResp, errorResp, loading];
 };
 
-export { useFetch };
+export default useFetch;

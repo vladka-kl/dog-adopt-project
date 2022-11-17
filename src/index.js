@@ -1,17 +1,15 @@
-// @ts-nocheck
-
 //import "./index.scss";
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./App.css";
-import App from "./App";
-import { BrowserRouter as Router } from "react-router-dom";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './App.css';
+import App from './App';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-{
-  /* Router is the core of every react router component */
-}
+/* Router is the core of every react router component */
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const selectedEle = document.getElementById('root');
+// @ts-ignore
+const root = ReactDOM.createRoot(selectedEle);
 root.render(
   <React.StrictMode>
     <Router>

@@ -6,8 +6,8 @@ import React from "react";
 export const Logo = () => {
   return (
     <div className={styles.headerLogo}>
-      <Link to="/">
-        <img className={styles.imageLogo} src={logo}></img>
+      <Link to='/'>
+        <img className={styles.imageLogo} src={logo} alt='breeds' />
       </Link>
       <div className={styles.logoText}>
         <p>ADOPTS</p>

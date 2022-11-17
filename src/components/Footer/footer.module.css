@@ -83,18 +83,10 @@
 
 
 @media only screen and (min-width: 600px) {
-    .copyright {
-        font-size: 14px;
-    }
-
-    .text {
-        font-size: 20px;
-    }
-
     .picBlock {
         display: flex;
         max-height: 150px;
-        justify-content: end;
+        justify-content: flex-end;
         position: relative;
     }
 
@@ -102,6 +94,12 @@
         gap: 15px;
         width: 150%;
         position: relative;
+    }
+    .text {
+        font-size: 20px;
+    }
+    .copyright {
+        font-size: 14px;
     }
 
     .checkBtn {
@@ -114,23 +112,22 @@
 }
 
 @media only screen and (min-width: 1024px) {
-    .copyright {
-        font-size: 20px;
-        line-height: 19px;
-        padding-top: 7px;
-        padding-bottom: 7px;
+    .picBlock {
+        display: flex;
+        max-height: 150px;
+        justify-content: flex-end;
+        position: relative;
     }
-
 
     .text {
         font-size: 28px;
     }
 
-    .picBlock {
-        display: flex;
-        max-height: 150px;
-        justify-content: end;
-        position: relative;
+    .copyright {
+        font-size: 20px;
+        line-height: 19px;
+        padding-top: 7px;
+        padding-bottom: 7px;
     }
 
     .checkBtn {

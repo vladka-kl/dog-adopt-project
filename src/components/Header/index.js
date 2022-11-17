@@ -1,8 +1,7 @@
-import { Logo } from "./Logo";
-import { MenuDropdown } from "./MenuDropdown";
-import NavBar from "./NavBar";
-import styles from "./Header.module.css";
-import React from "react";
+import { Logo } from './Logo';
+import NavBar from './NavBar';
+import styles from './Header.module.css';
+import React from 'react';
 
 // [dropdownOpen, setDropdownOpen] = useState(false);
 
