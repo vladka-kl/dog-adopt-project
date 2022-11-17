@@ -1,25 +1,35 @@
-import styles from './footer.module.css'
-import React from 'react'
-import FooterDog from '../../assets/images/FooterDog.png'
-import FooterDog1 from '../../assets/images/FooterDog1.png'
-import { Link } from 'react-router-dom';
+import styles from "./footer.module.css";
+import React from "react";
+import FooterDog from "../../assets/images/FooterDog.png";
+import { FaGithubSquare } from "react-icons/fa";
+import { IconContext } from "react-icons";
 
 const Footer = () => {
-    return (
-        <div className={styles.footer}>
-            <div className={styles.container}>
-                <div className={styles.colorBlock}>
-                    <p className={styles.text}> Adopt a Dog today </p>
-                    <Link to='/contact'>
-                        <button className={styles.checkBtn}> Contact us </button>
-                    </Link>
-                </div>
-                <div className={styles.picBlock}>
-                    <img src={FooterDog} alt="footer-dog" className={styles.picture}></img>
-                </div>
-            </div>
-            <div className={styles.copyright}> © Wilders team 2022 </div>
+  return (
+    <div className={styles.footer}>
+      <div className={styles.picBlock}>
+        <div className={styles.colorBlock}>
+          <p className={styles.text}> Adopt a Dog today </p>
         </div>
-    )
+        <img src={FooterDog} alt="footer-dog" className={styles.picture}></img>
+      </div>
+      <div className={styles.copyrightRow}>
+        <div className={styles.copyright}> © Wilders team 2022 </div>
+        <IconContext.Provider
+          value={{
+            color: "rgba(255, 255, 255, 1)",
+            className: "iconGit",
+            size: "30",
+          }}
+        >
+          <a href="https://github.com/vladka-kl/dog-adopt-project">
+            <span classname={styles.iconGit}>
+              <FaGithubSquare />
+            </span>
+          </a>
+        </IconContext.Provider>
+      </div>
+    </div>
+  );
 };
 export { Footer };
