@@ -6,8 +6,10 @@ import Congratulations from "./pages/Congratulations";
 import Details from "./pages/Details";
 import ContactUs from "./pages/ContactUs";
 
+
 import Header from "./components/Header";
 import useFetch from "./hooks/useFetch";
+
 import { Footer } from "./components/Footer/Footer";
 
 function App() {
@@ -50,8 +52,6 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/congrats" element={<Congratulations />} />
       </Routes>
-
-      {/* {data && <AppRoutes data={data} />} */}
       <Footer />
     </div>
   );

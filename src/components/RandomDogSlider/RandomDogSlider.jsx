@@ -37,12 +37,10 @@ function RandomDogSlider({ selectedDog, setSelectedDog }) {
   //Mapping through images
   const image = images.map((e, i) => (
     <NavLink key={i} to="/breed-info">
-      <img
-        src={e.image.url}
-        alt={e.name}
-        onClick={() => setSelectedDog(e)}
-        // onClick={navigate(`/breed-info/${id}`)}
-      />
+      <img src={e.image.url} alt={e.name} onClick={() => setSelectedDog(e)} />
+      <div>
+        <p>{e.image.name}</p>
+      </div>
     </NavLink>
   ));
 
@@ -53,7 +51,7 @@ function RandomDogSlider({ selectedDog, setSelectedDog }) {
   //Responsive number of pictures
   const responsive = {
     0: { items: 1 },
-    568: { items: 2 },
+    768: { items: 2 },
     1024: { items: 3 },
   };
 

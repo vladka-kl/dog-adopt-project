@@ -1,11 +1,11 @@
-* {
+
+.main {
+
   font-family: "Montserrat";
 }
 
 .card {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+
   padding-left: 5px;
   position: relative;
   z-index: 0;
@@ -18,16 +18,28 @@
   height: 60%;
   z-index: -1;
   position: absolute;
+
+  margin: 0 74px;
+
 }
 
 .infoBox {
   display: flex;
+
+  padding: 74px;
+
 }
 
 .pictureBox {
   display: flex;
-  width: 70%;
-  margin-left: 104px;
+
+  width: 24rem;
+  height: 18rem;
+  margin-left: 3rem;
+  object-fit: cover;
+  margin-top: 3rem;
+  box-shadow: var(--standard-shadow);
+
 }
 
 .title1 {
@@ -62,6 +74,9 @@
   font-style: normal;
   line-height: 150%;
   font-weight: 600;
+
+  margin-left: var(--small-margin);
+
 }
 
 .responce {
@@ -71,6 +86,9 @@
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+
+  margin-left: var(--small-margin);
+
 }
 
 .container {
@@ -102,7 +120,9 @@
 
 .dropdown {
   display: flex;
-  margin-left: 30px;
+
+  margin: 30px 74px;
+
   height: 40px;
   width: 170px;
   background-color: rgba(98, 109, 85, 1);
@@ -129,7 +149,8 @@
   height: 12%;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 768px) {
+
   .container {
     gap: 100px;
   }
@@ -142,11 +163,13 @@
   }
 
   .title {
-    font-size: 22px;
+
+    font-size: 24px;
   }
 
   .title1 {
-    font-size: 29px;
+    font-size: 32px;
+
   }
 
   .title2 {
@@ -158,8 +181,13 @@
   }
 
   .pictureBox {
-    width: 65%;
-    margin-left: 170px;
+
+    display: flex;
+    width: 26rem;
+    height: 18rem;
+    margin-left: 104px;
+    object-fit: cover;
+
   }
 
   .dropdown {
@@ -175,7 +203,9 @@
   }
 }
 
-@media only screen and (min-width: 1024px) {
+
+@media screen and (min-width: 1024px) {
+
   .container {
     gap: 120px;
   }
@@ -206,6 +236,10 @@
   .pictureBox {
     width: 65%;
     margin-left: 260px;
+
+    width: 28rem;
+    height: 20rem;
+
   }
 
   .dropdown {
