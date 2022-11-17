@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "./MenuDropdown.module.css";
+import styles from "./BurgerIcon.module.css";
 
-export const MenuDropdown = ({ isOpen }) => {
+export const BurgerIcon = ({ isOpen }) => {
   return (
     <div className={styles.dropdown}>
       <div className={`${styles.burger} ${styles.burger1}`} />
