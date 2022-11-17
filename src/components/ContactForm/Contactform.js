@@ -9,6 +9,7 @@ const ContactForm = () => {
       <div className={styles.inputFields}>
         <input type="text" placeholder="Your name" name="name" required />
       </div>
+
       <div className={styles.inputFields}>
         <input type="email" placeholder="Email" name="email" required />
       </div>

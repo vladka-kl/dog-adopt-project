@@ -61,35 +61,18 @@ h6 {
 
 .textLink {
   display: inline-flex;
+  align-items: center;
   justify-content: space-around;
   color: var(--main-color);
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
 }
+
 /* .burger1 {
   transform: $ {
-    isopen? 'rotate(45deg)' : "rotate(0)";
+    isopen?'rotate(45deg)': "rotate(0)";
   }
 } */
-
-/* .dropdown {
-  width: 100%;
-  background-color: var(--accent-color);
-}
-.dropdown ul {
-  display: flex;
-  flex-wrap: wrap;
-  float: right;
-  margin: 20 0px;
-  padding: 0 25px;
-}
-.dropdown ul li {
-  list-style-type: none;
-  padding-right: 10px;
-} */
-.dropdown {
-  display: none;
-}
 
 @media screen and (max-width: 768px) {
   .dropdown {

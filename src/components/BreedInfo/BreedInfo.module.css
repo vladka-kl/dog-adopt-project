@@ -1,0 +1,27 @@
+* {
+  font-family: "Montserrat";
+}
+
+.title {
+  font-size: 18px;
+  color: var(--accent-color);
+  font-style: normal;
+  line-height: 150%;
+  font-weight: 600;
+}
+
+.infobox {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  justify-content: right;
+  gap: 15px;
+}
+.photobox {
+  display: flex;
+  justify-content: flex-start;
+  object-fit: cover;
+  width: 28rem;
+  height: 18rem;
+  background-color: var(--main-color);
+}

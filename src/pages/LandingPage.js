@@ -17,6 +17,7 @@ const LandingPage = ({ selectedDog, setSelectedDog, dogsInfoResp }) => (
       selectedDog={selectedDog}
       setSelectedDog={setSelectedDog}
     />
+
     <DogsInfo
       selectedDog={selectedDog}
       setSelectedDog={setSelectedDog}

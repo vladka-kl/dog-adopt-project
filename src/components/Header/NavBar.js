@@ -1,5 +1,4 @@
 import React from "react";
-import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Dropdown } from "../DogsInfo/dropdown";
 import styles from "./Header.module.css";
@@ -19,11 +18,11 @@ const NavBar = ({ dogsInfoResp, setSelectedDog, selectedDog }) => {
             About us
           </Link>
         </li>
-        <li className={styles.menuListItem}>
+        <li className={styles.breedlist}>
           <Dropdown
+            className={styles.textLink}
             dogsInfoResp={dogsInfoResp}
             onSelect={handleSelect}
-            className={styles.desktopNavbar}
             selectedDog={selectedDog}
             isHeader
           />
