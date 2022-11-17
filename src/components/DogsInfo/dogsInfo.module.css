@@ -107,8 +107,7 @@
 
 .dropdown {
   display: flex;
-  margin-left: 74px;
-  margin-top: 30px;
+  margin: 30px 74px;
   height: 40px;
   width: 170px;
   background-color: rgba(98, 109, 85, 1);
