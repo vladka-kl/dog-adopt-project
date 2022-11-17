@@ -4,7 +4,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import { AboutUsInfo } from "../components/AboutUsInfo/AboutUsInfo";
 import { RandomText } from "../components/AboutUsInfo/RandomText";
 import { DogsInfo } from "../components/DogsInfo/DogsInfo";
-import Welcome from "../components/welcome/Welcome";
+import Welcome from "../components/Welcome/Welcome";
 import Steps from "../components/Steps/Steps";
 import { Footer } from "../components/Footer/Footer";
 
@@ -17,17 +17,11 @@ const LandingPage = ({ selectedDog, setSelectedDog, dogsInfoResp }) => (
       selectedDog={selectedDog}
       setSelectedDog={setSelectedDog}
     />
-<<<<<<< HEAD
     <DogsInfo
       selectedDog={selectedDog}
       setSelectedDog={setSelectedDog}
       dogsInfoResp={dogsInfoResp}
     />
-    <Footer />
-=======
-    <DogsInfo />
-    {/*<Footer />*/}
->>>>>>> 35d68b7b06989689df1d464454e85fabce5f1fa8
   </div>
 );
 
