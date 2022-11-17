@@ -3,7 +3,6 @@ import React from "react";
 import FooterDog from "../../assets/images/FooterDog.png";
 import { FaGithubSquare } from "react-icons/fa";
 import { IconContext } from "react-icons";
-import Maps from "../Maps/Maps";
 
 const Footer = () => {
   return (
@@ -11,7 +10,6 @@ const Footer = () => {
       <div className={styles.picBlock}>
         <div className={styles.colorBlock}>
           {/* <p className={styles.text}> Adopt a Dog today </p> */}
-          <Maps className={styles.maps} />
         </div>
         <img src={FooterDog} alt="footer-dog" className={styles.picture}></img>
       </div>

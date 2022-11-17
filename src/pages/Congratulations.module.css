@@ -31,4 +31,5 @@
 .subText {
   margin-top: var(--large-margin);
   font-size: 40px;
+  margin-bottom: var(--large-margin);
 }

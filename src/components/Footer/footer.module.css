@@ -103,11 +103,6 @@
   padding-left: 10px;
 }
 
-.maps {
-  padding: 16px;
-  margin-left: 30px;
-}
-
 @media screen and (min-width: 768px) {
   .copyright {
     font-size: 14px;

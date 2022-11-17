@@ -1,9 +1,9 @@
 import AliceCarousel from "react-alice-carousel";
-import React, { useState, useEffect, useNavigate } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./RandomDogSlider.module.css";
 import axios from "axios";
 import { NavLink } from "react-router-dom";
-import Details from "../../pages/Details";
+// import Details from "../../pages/Details";
 
 // Handle API fetching: change to custom hook!
 const handleFetching = (url, setResp, setLoading) => {
@@ -52,7 +52,8 @@ function RandomDogSlider({ selectedDog, setSelectedDog }) {
   const responsive = {
     0: { items: 1 },
     768: { items: 2 },
-    1024: { items: 3 },
+    1024: { items: 2 },
+    1366: { items: 3 },
   };
 
   return (
