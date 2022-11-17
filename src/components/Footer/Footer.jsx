@@ -19,7 +19,7 @@ const Footer = () => {
           value={{
             color: "rgba(255, 255, 255, 1)",
             className: "iconGit",
-            size: "20",
+            size: "30",
           }}
         >
           <a href="https://github.com/vladka-kl/dog-adopt-project">
