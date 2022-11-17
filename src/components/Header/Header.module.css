@@ -58,6 +58,9 @@ h6 {
   margin-top: 50px;
   background-color: grey;
 }
+.dropdown {
+  display: none;
+}
 
 .menuListOpen {
   display: inline;
@@ -80,15 +83,10 @@ h6 {
   font-family: "Montserrat", sans-serif;
 }
 
-.isBurger {
-  display: inline;
-}
-
-.isNotBurger {
-  display: none;
-}
-
 @media screen and (max-width: 768px) {
+  .menuListOpen {
+    display: none;
+  }
   .dropdown {
     display: fixed;
     padding-top: 10px;
