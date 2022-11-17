@@ -2,15 +2,15 @@ import { Logo } from "./Logo";
 import { MenuDropdown } from "./MenuDropdown";
 import NavBar from "./NavBar";
 import styles from "./Header.module.css";
-import React from "react";
-
-// [dropdownOpen, setDropdownOpen] = useState(false);
-
-// const toggleDropdown = () => {
-//   setDropdownOpen(!dropdownOpen);
-// };
+import React, { useState } from "react";
 
 const Header = ({ dogsInfoResp, setSelectedDog, selectedDog }) => {
+  // [dropdownOpen, setDropdownOpen] = useState(false);
+
+  // const toggleDropdown = () => {
+  //   setDropdownOpen(!dropdownOpen);
+  // };
+
   return (
     <div className={styles.mainHeader}>
       <Logo />
@@ -20,6 +20,9 @@ const Header = ({ dogsInfoResp, setSelectedDog, selectedDog }) => {
         className={styles.desktopNavbar}
         selectedDog={selectedDog}
       />
+      <div className={styles.dropdown} /*onClick={toggleDropdown}*/>
+        <MenuDropdown />
+      </div>
     </div>
   );
 };

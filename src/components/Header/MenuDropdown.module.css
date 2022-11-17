@@ -1,0 +1,31 @@
+.dropdown {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  z-index: 10;
+}
+
+.burger {
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 10px;
+  background-color: var(--accent-color);
+  transform-origin: 1px;
+  transition: all 0.3s linear;
+}
+.dropdown {
+  display: none;
+}
+/* .burger3 {
+  display: none;
+} */
+@media (max-width: 767px) {
+  .dropdown {
+    display: fixed;
+    padding-top: 10px;
+    margin-right: 10px;
+    z-index: 10;
+  }
+}
