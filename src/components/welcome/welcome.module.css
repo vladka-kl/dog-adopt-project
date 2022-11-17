@@ -27,7 +27,7 @@
 .title {
   color: #ffffff85;
   font-weight: bold;
-  font-family: var(--main-font);
+  font-family: var(--main-font) !important;
   font-size: 6.5rem;
   line-height: 1.5;
   text-align: justify;
@@ -72,13 +72,13 @@
 @media screen and (min-width: 1024px) {
   .mainDogImg {
     display: inline-block;
-    width: 55rem;
+    width: 45rem;
   }
 
   .mainDog {
     position: relative;
-    top: 24.5rem;
-    right: 23rem;
+    top: 31.5rem;
+    right: 16rem;
   }
 
   .title {

@@ -19,11 +19,7 @@ const NavBar = ({ dogsInfoResp, setSelectedDog, selectedDog }) => {
 
   return (
     <nav className={styles.menu}>
-      <ul
-        className={`${styles.menuList} ${
-          dropdownOpen ? styles.menuListOpen : styles.menuListClose
-        }`}
-      >
+      <ul className={styles.menuList}>
         <li className={styles.menuListItem}>
           <Link to="/" className={styles.textLink}>
             About us
@@ -44,9 +40,6 @@ const NavBar = ({ dogsInfoResp, setSelectedDog, selectedDog }) => {
           </Link>
         </li>
       </ul>
-      <div onClick={toggleDropdown}>
-        <BurgerIcon />
-      </div>
     </nav>
   );
 };
