@@ -7,13 +7,13 @@
   margin-right: auto;
   background-color: var(--main-color);
   border-radius: 5%;
+  object-fit: cover;
 }
 
 @media screen and (min-width: 768px) {
   .wrapper img {
     width: 24rem;
     height: 18rem;
-    object-fit: cover;
   }
   .wrapper img:hover {
     transform: scale(1.1);
@@ -24,7 +24,6 @@
   .wrapper img {
     width: 26rem;
     height: 20rem;
-    object-fit: cover;
   }
   .wrapper img:hover {
     transform: scale(1.1);
