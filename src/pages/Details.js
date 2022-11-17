@@ -2,10 +2,14 @@ import React from "react";
 import BreedInfo from "../components/BreedInfo/BreedInfo";
 
 const Details = ({ selectedDog }) => {
-  if (!Object.keys(selectedDog).length) {
+  function isEmpty(obj) {
+    return obj === undefined || obj === null || Object.keys(obj).length === 0;
+  }
+  if (isEmpty(selectedDog)) {
     return <div> no dog was selected </div>;
   }
 
+  console.log(selectedDog);
   return (
     <div className="LandingPage">
       <BreedInfo
