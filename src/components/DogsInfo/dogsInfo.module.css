@@ -1,227 +1,256 @@
-* {
-    font-family: 'Montserrat';
+
+.main {
+
+  font-family: "Montserrat";
 }
 
 .card {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 5px;
-    position: relative;
-    z-index: 0;
+
+  padding-left: 5px;
+  position: relative;
+  z-index: 0;
 }
 
 .colorSquare {
-    background-color: rgba(93, 104, 79, 1);
-    background-image: url("./Union2.svg");
-    width: 60%;
-    height: 60%;
-    z-index: -1;
-    position: absolute;
+  background-color: rgba(93, 104, 79, 1);
+  background-image: url("./Union2.svg");
+  width: 60%;
+  height: 60%;
+  z-index: -1;
+  position: absolute;
+
+  margin: 0 74px;
+
 }
 
 .infoBox {
-    display: flex;
+  display: flex;
+
+  padding: 74px;
+
 }
 
-
 .pictureBox {
-    display: flex;
-    width: 70%;
-    margin-left: 104px;
+  display: flex;
+
+  width: 24rem;
+  height: 18rem;
+  margin-left: 3rem;
+  object-fit: cover;
+  margin-top: 3rem;
+  box-shadow: var(--standard-shadow);
+
 }
 
 .title1 {
-    font-family: 'Montserrat';
-    text-align: center;
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 2 em;
-    line-height: 150%;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+  font-family: "Montserrat";
+  text-align: center;
+  font-style: normal;
+  font-weight: lighter;
+  font-size: 2 em;
+  line-height: 150%;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 .title2 {
-    font-family: 'Montserrat';
-    text-align: center;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 150%;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
+  font-family: "Montserrat";
+  text-align: center;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 150%;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
 }
 
 .title {
-    font-size: 18px;
-    color: rgba(167, 141, 117, 1);
-    font-family: 'Montserrat';
-    font-style: normal;
-    line-height: 150%;
-    font-weight: 600;
+  font-size: 18px;
+  color: rgba(167, 141, 117, 1);
+  font-family: "Montserrat";
+  font-style: normal;
+  line-height: 150%;
+  font-weight: 600;
+
+  margin-left: var(--small-margin);
+
 }
 
 .responce {
-    color: rgba(167, 141, 117, 1);
-    font-size: 16px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
+  color: rgba(167, 141, 117, 1);
+  font-size: 16px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+
+  margin-left: var(--small-margin);
+
 }
 
 .container {
-    display: flex;
-    list-style: none;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 15px;
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 15px;
 }
 
 .item {
-    align-self: center;
-    margin-bottom: 5px;
-    color: rgba(58, 58, 58, 1);
-    font-size: 16px;
-    font-family: 'Montserrat';
-    font-style: normal;
-
+  align-self: center;
+  margin-bottom: 5px;
+  color: rgba(58, 58, 58, 1);
+  font-size: 16px;
+  font-family: "Montserrat";
+  font-style: normal;
 }
 
 .buttonMore {
-    height: 40px;
-    width: 100px;
-    border: 2px solid #A78D75;
-    border-radius: 50px;
-    color: rgba(98, 109, 85, 1);
-    font-size: 14px;
+  height: 40px;
+  width: 100px;
+  border: 2px solid #a78d75;
+  border-radius: 50px;
+  color: rgba(98, 109, 85, 1);
+  font-size: 14px;
 }
 
 .dropdown {
-    display: flex;
-    margin-left: 30px;
-    height: 40px;
-    width: 170px;
-    background-color: rgba(98, 109, 85, 1);
-    margin-bottom: 30px;
-    font-family: 'Montserrat';
-    font-size: 14px;
-    text-align: center;
-    color: white;
-    border: 2px solid #A78D75;
-    border-radius: 40px;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+
+  margin: 30px 74px;
+
+  height: 40px;
+  width: 170px;
+  background-color: rgba(98, 109, 85, 1);
+  margin-bottom: 30px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  text-align: center;
+  color: white;
+  border: 2px solid #a78d75;
+  border-radius: 40px;
+  align-items: center;
+  justify-content: center;
 }
 
-
 .buttonPlace {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20px;
 }
 
 .pawPic {
-    width: 12%;
-    height: 12%;
+  width: 12%;
+  height: 12%;
+}
+
+@media only screen and (min-width: 768px) {
+
+  .container {
+    gap: 100px;
+  }
+
+  .pawPic {
+    width: 8%;
+    height: 8%;
+    padding-left: 10px;
+    margin-bottom: 30px;
+  }
+
+  .title {
+
+    font-size: 24px;
+  }
+
+  .title1 {
+    font-size: 32px;
+
+  }
+
+  .title2 {
+    font-size: 45px;
+  }
+
+  .responce {
+    font-size: 20px;
+  }
+
+  .pictureBox {
+
+    display: flex;
+    width: 26rem;
+    height: 18rem;
+    margin-left: 104px;
+    object-fit: cover;
+
+  }
+
+  .dropdown {
+    height: 50px;
+    width: 180px;
+    font-size: 18px;
+  }
+
+  .buttonMore {
+    height: 50px;
+    width: 130px;
+    font-size: 20px;
+  }
 }
 
 
+@media screen and (min-width: 1024px) {
 
-@media only screen and (min-width: 600px) {
-    .container {
-        gap: 100px;
-    }
+  .container {
+    gap: 120px;
+  }
 
-    .pawPic {
-        width: 8%;
-        height: 8%;
-        padding-left: 10px;
-        margin-bottom: 30px;
-    }
+  .pawPic {
+    width: 6%;
+    height: 6%;
+    padding-left: 10px;
+    margin-bottom: 35px;
+  }
 
-    .title {
-        font-size: 22px;
-    }
+  .title {
+    font-size: 22px;
+  }
 
-    .title1 {
-        font-size: 29px;
-    }
+  .title1 {
+    font-size: 35px;
+  }
 
-    .title2 {
-        font-size: 45px;
-    }
+  .title2 {
+    font-size: 50px;
+  }
 
-    .responce {
-        font-size: 20px;
-    }
+  .responce {
+    font-size: 22px;
+  }
 
-    .pictureBox {
-        width: 65%;
-        margin-left: 170px;
-    }
+  .pictureBox {
+    width: 65%;
+    margin-left: 260px;
 
-    .dropdown {
-        height: 50px;
-        width: 180px;
-        font-size: 18px;
-    }
+    width: 28rem;
+    height: 20rem;
 
-    .buttonMore {
-        height: 50px;
-        width: 130px;
-        font-size: 20px;
-    }
-}
+  }
 
-@media only screen and (min-width: 1024px) {
-    .container {
-        gap: 120px;
-    }
+  .dropdown {
+    height: 60px;
+    width: 200px;
+    font-size: 19px;
+  }
 
-    .pawPic {
-        width: 6%;
-        height: 6%;
-        padding-left: 10px;
-        margin-bottom: 35px;
-    }
-
-    .title {
-        font-size: 22px;
-    }
-
-    .title1 {
-        font-size: 35px;
-    }
-
-    .title2 {
-        font-size: 50px;
-    }
-
-    .responce {
-        font-size: 22px;
-    }
-
-    .pictureBox {
-        width: 65%;
-        margin-left: 260px;
-    }
-
-    .dropdown {
-        height: 60px;
-        width: 200px;
-        font-size: 19px;
-    }
-
-    .buttonMore {
-        height: 60px;
-        width: 180px;
-        font-size: 22px;
-    }
+  .buttonMore {
+    height: 60px;
+    width: 180px;
+    font-size: 22px;
+  }
 }

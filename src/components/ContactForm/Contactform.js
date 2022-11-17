@@ -14,6 +14,7 @@ const ContactForm = () => {
           required
         />
       </div>
+
       <div className={styles.inputFields}>
         <input
           type='email'

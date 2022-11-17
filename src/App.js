@@ -5,8 +5,10 @@ import LandingPage from './pages/LandingPage';
 import Congratulations from './pages/Congratulations';
 import Details from './pages/Details';
 import ContactUs from './pages/ContactUs';
-import { Footer } from './components/Footer/Footer';
 import Header from './components/Header';
+import { Footer } from './components/Footer/Footer';
+
+import { Footer } from "./components/Footer/Footer";
 
 function App() {
   const [selectedDog, setSelectedDog] = useState({});
@@ -31,7 +33,7 @@ function App() {
       />
       <Routes>
         <Route
-          path='/'
+          path="/"
           element={
             <LandingPage
               selectedDog={selectedDog}
@@ -41,13 +43,12 @@ function App() {
           }
         />
         <Route
-          path='/breed-info'
+          path="/breed-info"
           element={<Details selectedDog={selectedDog} />}
         />
-        <Route path='/contact' element={<ContactUs />} />
-        <Route path='/congrats' element={<Congratulations />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/congrats" element={<Congratulations />} />
       </Routes>
-      {/* {data && <AppRoutes data={data} />} */}
       <Footer />
     </div>
   );
