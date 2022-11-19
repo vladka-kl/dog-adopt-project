@@ -63,7 +63,7 @@
   }
   .mainDog {
     position: relative;
-    top: 37.5rem;
+    top: 37rem;
     right: 21rem;
   }
 
@@ -77,15 +77,15 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .mainDogImg {
     display: inline-block;
     max-width: 38rem;
   }
   .mainDog {
     position: relative;
-    top: 37.5rem;
-    right: 21rem;
+    top: 37rem;
+    right: 20rem;
   }
 
   .title {
@@ -107,7 +107,7 @@
   .mainDog {
     position: relative;
     top: 21.5rem;
-    right: 12rem;
+    right: 9rem;
   }
 
   .title {
@@ -124,7 +124,7 @@
   .mainDog {
     position: relative;
     top: 12.5rem;
-    right: 11rem;
+    right: 9rem;
   }
 
   .title {
