@@ -53,6 +53,7 @@
   text-shadow: var(--standard-shadow);
   font-family: "Montserrat", sans-serif;
   margin-bottom: 50px;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) {

@@ -7,11 +7,10 @@ import { IconContext } from "react-icons";
 const Footer = () => {
   return (
     <div className={styles.footer}>
-      <div className={styles.picBlock}>
+      <div className={styles.container}>
         <div className={styles.colorBlock}>
           {/* <p className={styles.text}> Adopt a Dog today </p> */}
         </div>
-        <img src={FooterDog} alt="footer-dog" className={styles.picture}></img>
       </div>
       <div className={styles.copyrightRow}>
         <div className={styles.copyright}> © Wilders team 2022 </div>
@@ -32,4 +31,4 @@ const Footer = () => {
     </div>
   );
 };
-export { Footer };
+export default Footer;
