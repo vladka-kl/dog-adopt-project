@@ -1,8 +1,13 @@
-import { Logo } from "./Logo";
-// import { MenuDropdown } from "./BurgerIcon";
-import NavBar from "./NavBar";
-import styles from "./Header.module.css";
-import React from "react";
+import { Logo } from './Logo';
+import NavBar from './NavBar';
+import styles from './Header.module.css';
+import React from 'react';
+
+// [dropdownOpen, setDropdownOpen] = useState(false);
+
+// const toggleDropdown = () => {
+//   setDropdownOpen(!dropdownOpen);
+// };
 
 const Header = ({ dogsInfoResp, setSelectedDog, selectedDog }) => {
   return (

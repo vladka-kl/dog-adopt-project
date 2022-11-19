@@ -8,8 +8,12 @@ import Welcome from "../components/Welcome/Welcome";
 import Steps from "../components/Steps/Steps";
 import { Footer } from "../components/Footer/Footer";
 
-const LandingPage = ({ selectedDog, setSelectedDog, dogsInfoResp }) => (
-  <div className="LandingPage">
+const LandingPage = ({
+  selectedDog,
+  setSelectedDog,
+  dogsInfoResp,
+}) => (
+  <div className='LandingPage'>
     <Welcome />
     <AboutUsInfo title={RandomText.title} text={RandomText.text} />
     <Steps />
@@ -23,6 +27,13 @@ const LandingPage = ({ selectedDog, setSelectedDog, dogsInfoResp }) => (
       setSelectedDog={setSelectedDog}
       dogsInfoResp={dogsInfoResp}
     />
+<<<<<<< HEAD
+    <Footer />
+
+    <DogsInfo />
+    {/*<Footer />*/}
+=======
+>>>>>>> Test
   </div>
 );
 
