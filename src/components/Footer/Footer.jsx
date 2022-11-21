@@ -1,4 +1,5 @@
 import styles from "./footer.module.css";
+import { Link } from "react-router-dom";
 import React from "react";
 import FooterDog from "../../assets/images/FooterDog.png";
 import { FaGithubSquare } from "react-icons/fa";
@@ -9,8 +10,25 @@ const Footer = () => {
     <div className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.colorBlock}>
-          {/* <p className={styles.text}> Adopt a Dog today </p> */}
+          <div className={styles.footerLinksGen}>
+            <h3 classname={styles.titleLinks}>General</h3>
+            <Link to="/" className={styles.textLink}>
+              <p>About</p>
+            </Link>
+            <p>Shelters</p>
+            <Link to="/contact" className={styles.textLink}>
+              <p>Contact</p>
+            </Link>
+            <p>Our Team</p>
+          </div>
+          <div className={styles.footerLinksSocial}>
+            <h3>Social Media</h3>
+            <p>Github</p>
+            <p>LinkedIn</p>
+            <p>Instagram</p>
+          </div>
         </div>
+        <img src={FooterDog} alt="footer-dog" className={styles.picture}></img>
       </div>
       <div className={styles.copyrightRow}>
         <div className={styles.copyright}> © Wilders team 2022 </div>
