@@ -79,7 +79,7 @@
 
   .textsIcon {
     font-size: 1rem;
-    width: 0;
+    width: 100px;
   }
   .iconsContainer {
     display: flex;
