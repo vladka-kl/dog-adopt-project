@@ -2,6 +2,8 @@ import AliceCarousel from "react-alice-carousel";
 import React, { useState, useEffect } from "react";
 import styles from "./RandomDogSlider.module.css";
 import axios from "axios";
+import { NavLink } from "react-router-dom";
+
 
 // Handle API fetching: change to custom hook!
 const handleFetching = (url, setResp, setLoading) => {
@@ -17,10 +19,11 @@ const handleFetching = (url, setResp, setLoading) => {
     });
 };
 
-function RandomDogSlider() {
+function RandomDogSlider({ selectedDog, setSelectedDog }) {
   const url = "https://api.thedogapi.com/v1/breeds";
   const [images, setImages] = useState([]);
   const [loading, setLoading] = useState(true);
+  // const navigate = useNavigate;
 
   useEffect(() => {
     handleFetching(url, setImages, setLoading);
@@ -32,7 +35,14 @@ function RandomDogSlider() {
   }
 
   //Mapping through images
-  const image = images.map((e) => <img src={e.image.url} alt={e.name} />);
+  const image = images.map((e, i) => (
+    <NavLink key={i} to="/breed-info">
+      <img src={e.image.url} alt={e.name} onClick={() => setSelectedDog(e)} />
+      <div>
+        <p>{e.image.name}</p>
+      </div>
+    </NavLink>
+  ));
 
   //Import random picture into slider
   const randomNumber = Math.floor(Math.random() * images.length) - 5;
@@ -41,8 +51,9 @@ function RandomDogSlider() {
   //Responsive number of pictures
   const responsive = {
     0: { items: 1 },
-    568: { items: 2 },
-    1024: { items: 3 },
+    768: { items: 2 },
+    1024: { items: 2 },
+    1366: { items: 3 },
   };
 
   return (

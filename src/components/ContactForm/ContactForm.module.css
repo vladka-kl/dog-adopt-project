@@ -1,0 +1,63 @@
+.main {
+  color: #ffffff85;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  margin-bottom: 16px;
+  padding: 16px;
+}
+.main input {
+  width: 40vh;
+  height: 5vh;
+}
+
+.main textarea {
+  width: 40vh;
+  height: 20vh;
+  padding: 16px;
+  margin-top: var(--standard-margin);
+}
+
+.headline {
+  color: var(--accent-color);
+}
+
+.submitButton button {
+  padding: var(--standard-padding);
+  border-radius: 12px;
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--main-color);
+  box-shadow: var(--standard-shadow);
+  text-shadow: var(--standard-shadow);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .main {
+    color: #ffffff85;
+    font-size: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    margin-bottom: 16px;
+    padding: 16px;
+  }
+  .main input {
+    width: 40vh;
+    height: 5vh;
+  }
+
+  .main textarea {
+    width: 60vh;
+    height: 20vh;
+    padding: 16px;
+    margin-top: var(--standard-margin);
+  }
+}

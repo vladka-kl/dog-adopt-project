@@ -16,6 +16,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: var(--main-font);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -23,6 +24,7 @@ body {
   width: 100vw;
   max-width: 100%;
   background-color: var(--main-color);
+  font-family: "Epilogue", sans-serif;
 }
 
 /* ----- Restyling Elements of NPM Package for RandomDogSlider----- */
@@ -31,10 +33,6 @@ body {
   color: black;
 }
 
-.alice-carousel__dots-item.__active {
-  background: black !important;
-}
-
 .alice-carousel__dots-item {
-  background: #0000003e !important;
+  display: none !important;
 }

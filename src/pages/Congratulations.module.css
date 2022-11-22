@@ -1,0 +1,43 @@
+.congratulations {
+  color: var(--accent-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+  min-height: 100vh;
+  box-shadow: var(--standard-shadow);
+  text-shadow: var(--standard-shadow);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+}
+.headline {
+  padding-top: 10px;
+}
+.subText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: var(--large-margin);
+  margin: 2em;
+
+  margin-bottom: var(--large-margin);
+}
+@media screen and (min-width: 768px) {
+  .congratulations {
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .headline {
+    padding-top: 5rem;
+    font-size: 5rem;
+  }
+  .subText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+}

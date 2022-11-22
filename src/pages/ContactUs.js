@@ -1,8 +1,9 @@
-import React from 'react';
+import React from "react";
+import ContactForm from "../components/ContactForm/Contactform";
 
 const ContactUs = () => (
-  <div className='LandingPage'>
-    <h2>ContactUs</h2>
+  <div>
+    <ContactForm />
   </div>
 );
 

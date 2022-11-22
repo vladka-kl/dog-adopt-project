@@ -1,29 +1,36 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { Dropdown } from "../DogsInfo/dropdown";
 
-const NavBar = () => {
+import styles from "./Header.module.css";
+
+const NavBar = ({ dogsInfoResp, setSelectedDog, selectedDog }) => {
+  const navigate = useNavigate();
+  const handleSelect = (event) => {
+    setSelectedDog(dogsInfoResp.find((dog) => dog.name === event.target.value));
+    navigate("/breed-info");
+  };
+
+
   return (
-    <header>
-      <nav className="menu">
-        <ul className="menu-list">
-          <li className="menu-item">
-            <Link to="./pages/LandingPage">About us</Link>
-          </li>
-          <li className="menu-item">
-            <Link to="./pages/BreedsInfo">Breeds</Link>
-          </li>
-          <li className="menu-item">
-            <Link to="./RandomDog">Random Dog Pic</Link>
-          </li>
-          <li className="menu-item">
-            <Link to="./FullDogsInfo">Breeds Info</Link>
-          </li>
-          <li className="menu-item">
-            <Link to="./pages/ContactUs">Contact us</Link>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <nav className={styles.menu}>
+      <ul className={styles.menuList}>
+        <li className={styles.breedlist}>
+          <Dropdown
+            className={styles.textLink}
+            dogsInfoResp={dogsInfoResp}
+            onSelect={handleSelect}
+            selectedDog={selectedDog}
+            isHeader
+          />
+        </li>
+        <li className={styles.contact}>
+          <Link to="/contact" className={styles.textLink}>
+            Contact us
+          </Link>
+        </li>
+      </ul>
+    </nav>
   );
 };
 

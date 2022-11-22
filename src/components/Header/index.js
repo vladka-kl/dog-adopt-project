@@ -1,15 +1,20 @@
 import { Logo } from "./Logo";
-import { MenuDropdown } from "./MenuDropdown";
-import { NavBar } from "./NavBar";
-import styles from "./Header.module.css";
 
-const Header = () => {
+import NavBar from "./NavBar";
+import styles from "./Header.module.css";
+import React from "react";
+
+const Header = ({ dogsInfoResp, setSelectedDog, selectedDog }) => {
   return (
-    <div className={styles.mainHeader}>
+    <header className={styles.mainHeader}>
       <Logo />
-      <MenuDropdown />
-      {/* <NavBar /> */}
-    </div>
+      <NavBar
+        setSelectedDog={setSelectedDog}
+        dogsInfoResp={dogsInfoResp}
+        className={styles.desktopNavbar}
+        selectedDog={selectedDog}
+      />
+    </header>
   );
 };
 

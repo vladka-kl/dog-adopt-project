@@ -4,18 +4,24 @@ import "react-alice-carousel/lib/alice-carousel.css";
 import { AboutUsInfo } from "../components/AboutUsInfo/AboutUsInfo";
 import { RandomText } from "../components/AboutUsInfo/RandomText";
 import { DogsInfo } from "../components/DogsInfo/DogsInfo";
-import Header from "../components/Header/index";
 import Welcome from "../components/welcome/Welcome";
-import { Footer } from "../components/Footer/Footer";
+import Steps from "../components/Steps/Steps";
 
-const LandingPage = () => (
+const LandingPage = ({ selectedDog, setSelectedDog, dogsInfoResp }) => (
   <div className="LandingPage">
-    <Header />
     <Welcome />
     <AboutUsInfo title={RandomText.title} text={RandomText.text} />
-    <RandomDogSlider />
-    <DogsInfo />
-    <Footer />
+    <Steps />
+    <RandomDogSlider
+      selectedDog={selectedDog}
+      setSelectedDog={setSelectedDog}
+    />
+
+    <DogsInfo
+      selectedDog={selectedDog}
+      setSelectedDog={setSelectedDog}
+      dogsInfoResp={dogsInfoResp}
+    />
   </div>
 );
 

@@ -1,18 +1,15 @@
-import styles from "./dogsInfo.module.css"
-import { breedsData } from "./data";
-import React from "react"
-const Dropdown = props => {
-    return (
-        <select onChange={props.onSelect}
-            className={styles.dropdown} >
-            <option>Choose your breed</option>
-            {breedsData.map((singleBreed, index) =>
-                <option> {singleBreed.name}</option>
-            )}
-        </select>
-    )
-}
+import styles from "./dogsInfo.module.css";
+import React from "react";
+
+const Dropdown = ({ dogsInfoResp, onSelect }) => {
+  return (
+    <select onChange={onSelect} className={styles.dropdown}>
+      <option>Choose a breed</option>
+      {dogsInfoResp.map((element) => (
+        <option key={element.id}>{element.name}</option>
+      ))}
+    </select>
+  );
+};
 
 export { Dropdown };
-
-

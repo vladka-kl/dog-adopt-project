@@ -1,15 +1,31 @@
 /* Resize images */
 .wrapper img {
   display: flex;
-  width: 80%;
-  height: auto;
+  width: 20rem;
+  height: 17rem;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--main-color);
+  border-radius: 5%;
+  object-fit: cover;
 }
 
 @media screen and (min-width: 768px) {
   .wrapper img {
-    width: 80%;
+    width: 24rem;
+    height: 18rem;
+  }
+  .wrapper img:hover {
+    transform: scale(1.1);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .wrapper img {
+    width: 26rem;
+    height: 20rem;
+  }
+  .wrapper img:hover {
+    transform: scale(1.1);
   }
 }
