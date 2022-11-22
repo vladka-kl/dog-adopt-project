@@ -70,15 +70,20 @@
 
 @media screen and (min-width: 768px) {
   .text {
-    padding: 0 74px 0 74px;
+    padding: 0 32px 0 32px;
+    width: 100%;
   }
   .aboutUs {
     font-size: 2rem;
   }
 
   .textsIcon {
-    font-size: 1.5rem;
-    width: 100px;
+    font-size: 1rem;
+    width: 0;
+  }
+  .iconsContainer {
+    display: flex;
+    flex-direction: row;
   }
 }
 
