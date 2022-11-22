@@ -38,9 +38,6 @@
 .container {
   display: flex;
   flex-direction: row;
-  left: 0%;
-  right: 0%;
-  bottom: 0%;
 }
 
 .textLink {
@@ -86,11 +83,7 @@
 }
 
 .picture {
-  border: none !important;
-  width: 21rem;
-  height: auto;
-  max-width: 100% !important;
-  cursor: pointer;
+  display: none;
 }
 
 .text {
@@ -220,6 +213,14 @@ a:any-link {
     max-height: 150px;
     justify-content: end;
     position: relative;
+  }
+
+  .picture {
+    border: none !important;
+    width: 21rem;
+    height: auto;
+    max-width: 100% !important;
+    cursor: pointer;
   }
 
   .colorBlock {

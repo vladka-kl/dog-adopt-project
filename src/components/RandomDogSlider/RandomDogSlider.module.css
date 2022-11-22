@@ -1,8 +1,8 @@
 /* Resize images */
 .wrapper img {
   display: flex;
-  width: rem;
-  height: 28rem;
+  width: 20rem;
+  height: 17rem;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--main-color);

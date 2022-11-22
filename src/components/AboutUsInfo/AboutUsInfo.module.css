@@ -1,7 +1,7 @@
 .aboutUs {
   display: flex;
   flex-direction: column;
-  padding: 10% 20%;
+  padding: 5% 10%;
   justify-content: center;
   color: rgba(93, 104, 79, 0.7);
   background-color: var(--main-color);
