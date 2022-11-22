@@ -38,6 +38,7 @@
 .container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .textLink {
@@ -48,26 +49,10 @@
   background-color: var(--accent-color);
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  padding: 1rem;
+  align-items: center;
+  justify-content: space-around;
   color: var(--main-color);
   gap: 10px;
-}
-
-.footerLinksGen {
-  display: flex;
-  flex-direction: column;
-  /* padding: 0.5rem; */
-  height: 100%;
-  justify-content: space-between;
-}
-
-.footerLinksSocial {
-  display: flex;
-  flex-direction: column;
-  /* padding: 0.5rem; */
-  height: 100%;
-  justify-content: space-between;
 }
 
 .titleLinks {
@@ -148,25 +133,20 @@
   background: rgba(49, 49, 49, 0.8);
 }
 .modalContent {
-  text-align: center;
-  min-height: 15rem;
-  color: var(--accent-color);
-  position: relative;
-  margin: 0 auto;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  line-height: 1.4;
-  background: var(--main-color);
-  padding: 14px 28px;
-  border-radius: 3px;
-  max-width: 55rem;
-  min-width: 300px;
   display: flex;
-  flex-direction: row;
+  color: var(--accent-color);
+  position: fixed;
+  background: var(--main-color);
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  max-width: 90%;
+  max-height: 90%;
+  flex-wrap: wrap;
 }
 
 .closeModal {
@@ -199,6 +179,7 @@ a:any-link {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 50%;
 }
 @media screen and (min-width: 768px) {
   .copyright {
@@ -219,7 +200,7 @@ a:any-link {
   .picture {
     display: inline-block;
     border: none !important;
-    width: 21rem;
+    width: 16rem;
     height: auto;
     max-width: 100% !important;
     cursor: pointer;
@@ -267,7 +248,7 @@ a:any-link {
   }
 
   .picture {
-    width: 40rem;
+    width: 32rem;
   }
 
   .checkBtn {
@@ -281,6 +262,7 @@ a:any-link {
     gap: 32px;
     width: 200%;
     position: relative;
+    padding-left: 1em;
   }
 
   .modal,
@@ -292,27 +274,5 @@ a:any-link {
     right: 0;
     bottom: 0;
     position: fixed;
-  }
-
-  .modalContent {
-    text-align: center;
-    min-height: 50vh;
-    color: var(--accent-color);
-    position: absolute;
-    margin: 0 auto;
-    top: 0;
-    left: 100%;
-    transform: translate(-50%, -50%);
-    line-height: 1.4;
-    background: var(--main-color);
-    padding: 14px 28px;
-    border-radius: 3px;
-    max-width: 55rem;
-    min-width: 300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
   }
 }
