@@ -9,12 +9,12 @@
 
 .mainDogImg {
   display: inline-block;
-  max-width: 16rem;
+  max-width: 15.5rem;
   object-position: bottom;
 }
 .mainDog {
   position: relative;
-  top: 12.2rem;
+  top: 12.5rem;
   right: 7rem;
 }
 
