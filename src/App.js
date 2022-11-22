@@ -1,11 +1,9 @@
-// @ts-nocheck
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
 import Congratulations from "./pages/Congratulations";
 import Details from "./pages/Details";
 import ContactUs from "./pages/ContactUs";
-
 
 import Header from "./components/Header";
 import useFetch from "./hooks/useFetch";

@@ -1,9 +1,8 @@
 import AliceCarousel from "react-alice-carousel";
-import React, { useState, useEffect, useNavigate } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./RandomDogSlider.module.css";
 import axios from "axios";
 import { NavLink } from "react-router-dom";
-import Details from "../../pages/Details";
 
 // Handle API fetching: change to custom hook!
 const handleFetching = (url, setResp, setLoading) => {

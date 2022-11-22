@@ -1,8 +1,7 @@
 import { Logo } from "./Logo";
-import { MenuDropdown } from "./BurgerIcon";
 import NavBar from "./NavBar";
 import styles from "./Header.module.css";
-import React, { useState } from "react";
+import React from "react";
 
 const Header = ({ dogsInfoResp, setSelectedDog, selectedDog }) => {
   return (
@@ -14,9 +13,6 @@ const Header = ({ dogsInfoResp, setSelectedDog, selectedDog }) => {
         className={styles.desktopNavbar}
         selectedDog={selectedDog}
       />
-      {/* <div className={styles.dropdown} onClick={toggleDropdown}>
-        <MenuDropdown />
-      </div> */}
     </div>
   );
 };

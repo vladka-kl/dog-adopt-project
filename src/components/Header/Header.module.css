@@ -39,10 +39,11 @@ h6 {
 
 .menu {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   font-weight: bolder;
   font-family: "Montserrat", sans-serif;
   width: 100%;
+  padding-right: 5em;
 }
 
 .menuList {

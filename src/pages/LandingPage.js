@@ -6,7 +6,6 @@ import { RandomText } from "../components/AboutUsInfo/RandomText";
 import { DogsInfo } from "../components/DogsInfo/DogsInfo";
 import Welcome from "../components/welcome/Welcome";
 import Steps from "../components/Steps/Steps";
-import { Footer } from "../components/Footer/Footer";
 
 const LandingPage = ({ selectedDog, setSelectedDog, dogsInfoResp }) => (
   <div className="LandingPage">

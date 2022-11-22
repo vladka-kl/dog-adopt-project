@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Dropdown } from "../DogsInfo/dropdown";
-import { BurgerIcon } from "./BurgerIcon";
 import styles from "./Header.module.css";
 
 const NavBar = ({ dogsInfoResp, setSelectedDog, selectedDog }) => {
@@ -11,20 +10,9 @@ const NavBar = ({ dogsInfoResp, setSelectedDog, selectedDog }) => {
     navigate("/breed-info");
   };
 
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-
-  const toggleDropdown = () => {
-    setDropdownOpen(!dropdownOpen);
-  };
-
   return (
     <nav className={styles.menu}>
       <ul className={styles.menuList}>
-        <li className={styles.menuListItem}>
-          <Link to="/" className={styles.textLink}>
-            About us
-          </Link>
-        </li>
         <li className={styles.breedlist}>
           <Dropdown
             className={styles.textLink}
