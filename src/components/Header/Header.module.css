@@ -1,17 +1,3 @@
-:root {
-  --accent-color: #5d684f;
-  --main-color: #fffbf7;
-  --bg-color: #a78d75;
-  --main-font: "Epilogue", sans-serif;
-  --standard-margin: 16px;
-  --small-margin: 8px;
-  --large-margin: 74px;
-  --main-font-size: 16px;
-  --large-font-size: 24px;
-  --standard-padding: 16px;
-  --standard-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
-}
-
 .mainHeader {
   background-color: var(--bg-color);
   display: flex;
@@ -46,7 +32,6 @@ h6 {
   font-weight: bolder;
   font-family: "Montserrat", sans-serif;
   width: 100%;
-  padding-right: 5em;
 }
 
 .menuList {
