@@ -8,10 +8,6 @@ import { Link } from "react-router-dom";
 const DogsInfo = ({ setSelectedDog, dogsInfoResp }) => {
   const [selectedDogName, setSelectedDogName] = useState(dogsInfoResp[51].name);
 
-  //const [index, setIndex] = useState(0);
-  //const [name, setName] = useState("");
-  //const [loading, setLoading] = useState(true);
-
   const handleSelect = (event) => {
     setSelectedDogName(event.target.value);
     setSelectedDog(dogsInfoResp.find((dog) => dog.name === event.target.value));

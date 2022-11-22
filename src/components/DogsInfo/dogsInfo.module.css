@@ -11,7 +11,7 @@
 .colorSquare {
   background-color: rgba(93, 104, 79, 1);
   background-image: url("./Union2.svg");
-  width: 60%;
+  width: 70%;
   height: 60%;
   z-index: -1;
   position: absolute;
@@ -21,13 +21,12 @@
 
 .infoBox {
   display: flex;
-
+  width: inherit;
   padding: 74px;
 }
 
 .pictureBox {
   display: flex;
-
   width: 24rem;
   height: 18rem;
   margin-left: 3rem;
@@ -90,10 +89,11 @@
   justify-content: center;
   align-items: flex-start;
   gap: 15px;
+  width: 90%;
 }
 
 .item {
-  align-self: center;
+  align-self: flex-start;
   margin-bottom: 5px;
   color: rgba(58, 58, 58, 1);
   font-size: 16px;
@@ -193,7 +193,7 @@
 
 @media screen and (min-width: 1024px) {
   .container {
-    gap: 120px;
+    gap: 80px;
   }
 
   .pawPic {
