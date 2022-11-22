@@ -4,7 +4,6 @@ import React from "react";
 import FooterDog from "../../assets/images/FooterDog.png";
 import { FaGithubSquare } from "react-icons/fa";
 import { AiFillLinkedin, AiOutlineInstagram } from "react-icons/ai";
-import { IconContext } from "react-icons";
 import Module from "./Modal";
 
 const linkNames = ["About", "Contact", "Our Team"];
@@ -31,7 +30,7 @@ const Footer = () => {
             <h3>Social Media</h3>
             <a
               className={styles.iconPersonal}
-              href="https://www.linkedin.com/"
+              href="https://github.com/vladka-kl/dog-adopt-project"
               target="_blank"
             >
               <i>
@@ -74,22 +73,6 @@ const Footer = () => {
       </div>
       <div className={styles.copyrightRow}>
         <div className={styles.copyright}> © Wilders team 2022 </div>
-        <IconContext.Provider
-          value={{
-            color: "rgba(255, 255, 255, 1)",
-            className: "iconGit",
-            size: "30",
-          }}
-        >
-          <a
-            href="https://github.com/vladka-kl/dog-adopt-project"
-            target="_blank"
-          >
-            <i classname={styles.iconGit}>
-              <FaGithubSquare />
-            </i>
-          </a>
-        </IconContext.Provider>
       </div>
     </div>
   );

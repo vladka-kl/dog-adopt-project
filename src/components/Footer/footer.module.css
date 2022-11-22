@@ -15,7 +15,7 @@
 .copyrightRow {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(58, 58, 58, 1);
   font-family: "Montserrat";
