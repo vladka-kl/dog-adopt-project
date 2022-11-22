@@ -4,6 +4,10 @@ import React from "react";
 import FooterDog from "../../assets/images/FooterDog.png";
 import { FaGithubSquare } from "react-icons/fa";
 import { IconContext } from "react-icons";
+import Module from "./Modal";
+
+const linkNames = ["About", "Contact", "Our Team"];
+const socialMedia = ["Github", "LinkedIn", "Instagram"];
 
 const Footer = () => {
   return (
@@ -12,14 +16,15 @@ const Footer = () => {
         <div className={styles.colorBlock}>
           <div className={styles.footerLinksGen}>
             <h3 classname={styles.titleLinks}>General</h3>
-            <Link to="/" className={styles.textLink}>
+            <a href="#aboutUs" className={styles.textLink}>
               <p>About</p>
-            </Link>
-            <p>Shelters</p>
+            </a>
             <Link to="/contact" className={styles.textLink}>
               <p>Contact</p>
             </Link>
-            <p>Our Team</p>
+            <Module>
+              <p>Our Team</p>
+            </Module>
           </div>
           <div className={styles.footerLinksSocial}>
             <h3>Social Media</h3>
@@ -39,10 +44,13 @@ const Footer = () => {
             size: "30",
           }}
         >
-          <a href="https://github.com/vladka-kl/dog-adopt-project">
-            <span classname={styles.iconGit}>
+          <a
+            href="https://github.com/vladka-kl/dog-adopt-project"
+            target="_blank"
+          >
+            <i classname={styles.iconGit}>
               <FaGithubSquare />
-            </span>
+            </i>
           </a>
         </IconContext.Provider>
       </div>

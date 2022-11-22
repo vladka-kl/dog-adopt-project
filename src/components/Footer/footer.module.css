@@ -9,6 +9,7 @@
   width: 100%;
   margin-bottom: 0px;
   font-family: "Montserrat";
+  text-decoration: none;
 }
 
 .copyrightRow {
@@ -86,7 +87,7 @@
 
 .picture {
   border: none !important;
-  width: 30rem;
+  width: 33rem;
   height: auto;
   max-width: 100% !important;
   cursor: pointer;
@@ -126,6 +127,85 @@
   padding-left: 10px;
 }
 
+/* ---- Modal starts here ---- */
+
+.activeModal {
+  overflow-y: hidden;
+}
+
+.btnModal {
+  border: none;
+  background: transparent;
+  display: block;
+}
+
+.modal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay {
+  background: rgba(49, 49, 49, 0.8);
+}
+.modalContent {
+  text-align: center;
+  min-height: 50vh;
+  color: var(--accent-color);
+  position: absolute;
+  margin: 0 auto;
+  top: 0;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: var(--main-color);
+  padding: 14px 28px;
+  border-radius: 3px;
+  max-width: 55rem;
+  min-width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.closeModal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 7px;
+}
+
+a:any-link {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.links {
+  display: flex;
+}
+
+.iconPersonal {
+  color: var(--accent-color) !important;
+  margin-top: var(--small-margin);
+  width: 50px !important;
+  height: auto;
+}
+.iconDog {
+  margin-bottom: var(--small-margin);
+}
+.prCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 @media screen and (min-width: 768px) {
   .copyright {
     font-size: 14px;
@@ -173,6 +253,10 @@
     max-height: 150px;
     justify-content: end;
     position: relative;
+  }
+
+  .picture {
+    width: 40rem;
   }
 
   .checkBtn {

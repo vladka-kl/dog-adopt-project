@@ -7,9 +7,7 @@ const Welcome = () => {
   return (
     <section className={styles.containerBG}>
       <div className={styles.welcomeBox}>
-        <h1 className={styles.title}>
-          <h1>ADOPT DON'T BUY</h1>
-        </h1>
+        <h1 className={styles.title}>ADOPT DON'T BUY</h1>
         <Link to="/contact">
           <button className={styles.adoptButton}>ADOPT</button>
         </Link>

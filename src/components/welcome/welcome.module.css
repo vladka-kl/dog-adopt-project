@@ -7,10 +7,6 @@
   font-weight: bolder;
 }
 
-.welcomeBox {
-  font-weight: bolder;
-}
-
 .mainDogImg {
   display: inline-block;
   max-width: 38rem;
@@ -18,7 +14,7 @@
 }
 .mainDog {
   position: relative;
-  top: 37.5rem;
+  top: 30rem;
   right: 21rem;
 }
 
@@ -35,7 +31,7 @@
   color: #ffffff85;
   font-weight: bold;
   font-family: var(--main-font) !important;
-  font-size: 6.5rem;
+  font-size: 6rem;
   line-height: 1.5;
   text-align: justify;
 }
@@ -64,8 +60,8 @@
   }
   .mainDog {
     position: relative;
-    top: 37rem;
-    right: 21rem;
+    top: 23rem;
+    right: 13rem;
   }
 
   .title {
@@ -85,8 +81,8 @@
   }
   .mainDog {
     position: relative;
-    top: 37rem;
-    right: 20rem;
+    top: 23rem;
+    right: 12rem;
   }
 
   .title {
@@ -108,11 +104,11 @@
   .mainDog {
     position: relative;
     top: 21.5rem;
-    right: 9rem;
+    right: 10rem;
   }
 
   .title {
-    font-size: 4rem;
+    font-size: 6rem;
   }
 }
 
@@ -129,6 +125,6 @@
   }
 
   .title {
-    font-size: 4rem;
+    font-size: 6rem;
   }
 }

@@ -12,7 +12,7 @@ const texts = [
 ];
 function AboutUsInfo({ text, title }) {
   return (
-    <section className={styles.aboutUs}>
+    <section className={styles.aboutUs} id="aboutUs">
       <h2 className={styles.title}>{title}</h2>
       <p className={styles.text}>{text}</p>
       <div className={styles.iconsContainer}>
