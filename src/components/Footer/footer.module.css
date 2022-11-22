@@ -87,7 +87,7 @@
 
 .picture {
   border: none !important;
-  width: 33rem;
+  width: 21rem;
   height: auto;
   max-width: 100% !important;
   cursor: pointer;
@@ -155,12 +155,12 @@
 }
 .modalContent {
   text-align: center;
-  min-height: 50vh;
+  min-height: 15rem;
   color: var(--accent-color);
-  position: absolute;
+  position: relative;
   margin: 0 auto;
-  top: 0;
-  left: 100%;
+  top: 40%;
+  left: 50%;
   transform: translate(-50%, -50%);
   line-height: 1.4;
   background: var(--main-color);
@@ -270,5 +270,38 @@ a:any-link {
     gap: 15px;
     width: 200%;
     position: relative;
+  }
+
+  .modal,
+  .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+  }
+
+  .modalContent {
+    text-align: center;
+    min-height: 50vh;
+    color: var(--accent-color);
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: var(--main-color);
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 55rem;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
   }
 }
