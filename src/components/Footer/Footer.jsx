@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import React from "react";
 import FooterDog from "../../assets/images/FooterDog.png";
 import { FaGithubSquare } from "react-icons/fa";
+import { AiFillLinkedin, AiOutlineInstagram } from "react-icons/ai";
 import { IconContext } from "react-icons";
 import Module from "./Modal";
 
@@ -28,9 +29,45 @@ const Footer = () => {
           </div>
           <div className={styles.footerLinksSocial}>
             <h3>Social Media</h3>
-            <p>Github</p>
-            <p>LinkedIn</p>
-            <p>Instagram</p>
+            <a
+              className={styles.iconPersonal}
+              href="https://www.linkedin.com/"
+              target="_blank"
+            >
+              <i>
+                <FaGithubSquare
+                  color="#fffbf7"
+                  size="24"
+                  classname={styles.iconPersonal}
+                />
+              </i>
+            </a>
+            <a
+              className={styles.iconPersonal}
+              href="https://www.linkedin.com/"
+              target="_blank"
+            >
+              <i>
+                <AiFillLinkedin
+                  color="#fffbf7"
+                  size="24"
+                  classname={styles.iconPersonal}
+                />
+              </i>
+            </a>
+            <a
+              className={styles.iconPersonal}
+              href="https://www.linkedin.com/"
+              target="_blank"
+            >
+              <i>
+                <AiOutlineInstagram
+                  color="#fffbf7"
+                  size="24"
+                  classname={styles.iconPersonal}
+                />
+              </i>
+            </a>
           </div>
         </div>
         <img src={FooterDog} alt="footer-dog" className={styles.picture}></img>
