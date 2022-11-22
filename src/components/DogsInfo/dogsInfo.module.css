@@ -11,7 +11,7 @@
 .colorSquare {
   background-color: rgba(93, 104, 79, 1);
   background-image: url("./Union2.svg");
-  width: 85%;
+  width: 90%;
   height: 60%;
   z-index: -1;
   position: absolute;
@@ -137,8 +137,6 @@
   width: 12%;
   height: 12%;
 }
-@media screen and (min-width: 600px) {
-}
 
 @media screen and (min-width: 768px) {
   .container {
@@ -220,8 +218,8 @@
 
   .pictureBox {
     display: flex;
-    width: 65%;
     margin-left: 260px;
+    margin-top: var(--small-margin);
     width: 28rem;
     height: 20rem;
   }
@@ -236,5 +234,9 @@
     height: 60px;
     width: 180px;
     font-size: 22px;
+  }
+
+  .colorSquare {
+    width: 75%;
   }
 }
