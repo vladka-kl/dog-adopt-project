@@ -12,7 +12,14 @@
 }
 
 .mainDogImg {
-  display: none;
+  display: inline-block;
+  max-width: 38rem;
+  object-position: bottom;
+}
+.mainDog {
+  position: relative;
+  top: 37.5rem;
+  right: 21rem;
 }
 
 .welcomeBox {
@@ -46,17 +53,40 @@
   text-shadow: var(--standard-shadow);
   font-family: "Montserrat", sans-serif;
   margin-bottom: 50px;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) {
   .mainDogImg {
     display: inline-block;
-    width: 37rem;
+    max-width: 38rem;
+    object-position: bottom;
   }
   .mainDog {
     position: relative;
-    top: 37.5rem;
+    top: 37rem;
     right: 21rem;
+  }
+
+  .title {
+    font-size: 6.25rem;
+  }
+
+  .adoptButton {
+    font-size: 24px;
+    width: 8rem;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .mainDogImg {
+    display: inline-block;
+    max-width: 38rem;
+  }
+  .mainDog {
+    position: relative;
+    top: 37rem;
+    right: 20rem;
   }
 
   .title {
@@ -72,16 +102,33 @@
 @media screen and (min-width: 1024px) {
   .mainDogImg {
     display: inline-block;
-    width: 45rem;
+    width: 38rem;
   }
 
   .mainDog {
     position: relative;
-    top: 31.5rem;
-    right: 16rem;
+    top: 21.5rem;
+    right: 9rem;
   }
 
   .title {
-    font-size: 6.25rem;
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 1304px) {
+  .mainDogImg {
+    display: inline-block;
+    width: 38rem;
+  }
+
+  .mainDog {
+    position: relative;
+    top: 12.5rem;
+    right: 9rem;
+  }
+
+  .title {
+    font-size: 4rem;
   }
 }

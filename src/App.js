@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import LandingPage from "./pages/LandingPage";
@@ -8,7 +9,7 @@ import ContactUs from "./pages/ContactUs";
 import Header from "./components/Header";
 import useFetch from "./hooks/useFetch";
 
-import { Footer } from "./components/Footer/Footer";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [selectedDog, setSelectedDog] = useState({});

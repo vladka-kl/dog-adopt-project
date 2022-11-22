@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Congratulations.module.css";
 import Confetti from "react-confetti";
+import Maps from "../components/Maps/Maps";
 
 const Congratulations = () => (
   <div>
@@ -10,6 +11,7 @@ const Congratulations = () => (
       <p class={styles.subText}>
         You will soon be the Owner of a cute Dog ▼・ᴥ・▼
       </p>
+      <Maps className={styles.maps} />
     </div>
   </div>
 );

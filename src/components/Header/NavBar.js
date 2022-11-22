@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Dropdown } from "../DogsInfo/dropdown";
+
 import styles from "./Header.module.css";
 
 const NavBar = ({ dogsInfoResp, setSelectedDog, selectedDog }) => {
@@ -9,6 +10,7 @@ const NavBar = ({ dogsInfoResp, setSelectedDog, selectedDog }) => {
     setSelectedDog(dogsInfoResp.find((dog) => dog.name === event.target.value));
     navigate("/breed-info");
   };
+
 
   return (
     <nav className={styles.menu}>

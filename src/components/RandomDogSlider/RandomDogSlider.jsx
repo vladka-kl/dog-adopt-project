@@ -4,6 +4,7 @@ import styles from "./RandomDogSlider.module.css";
 import axios from "axios";
 import { NavLink } from "react-router-dom";
 
+
 // Handle API fetching: change to custom hook!
 const handleFetching = (url, setResp, setLoading) => {
   axios
@@ -51,7 +52,8 @@ function RandomDogSlider({ selectedDog, setSelectedDog }) {
   const responsive = {
     0: { items: 1 },
     768: { items: 2 },
-    1024: { items: 3 },
+    1024: { items: 2 },
+    1366: { items: 3 },
   };
 
   return (

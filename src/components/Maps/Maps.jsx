@@ -3,15 +3,15 @@ import React from "react";
 
 export default function Maps() {
   return (
-    <div className="mapouter">
+    <div className="maps">
       <iframe
-        width="300"
-        height="200"
+        width="400"
+        height="300"
         id="gmap_canvas"
         src="https://maps.google.com/maps?q=Hundeheim%20berlin&t=&z=9&ie=UTF8&iwloc=&output=embed"
         frameborder="0"
         scrolling="yes"
-        marginheight="0"
+        marginheight="20"
         marginwidth="0"
       ></iframe>
     </div>
