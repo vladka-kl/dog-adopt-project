@@ -22,7 +22,7 @@ const NavBar = ({ dogsInfoResp, setSelectedDog, selectedDog }) => {
             isHeader
           />
         </li>
-        <li>
+        <li className={styles.contact}>
           <Link to="/contact" className={styles.textLink}>
             Contact us
           </Link>
