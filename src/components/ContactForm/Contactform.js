@@ -1,10 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
+import { useNavigate } from "react-router-dom";
 import styles from "./ContactForm.module.css";
 
 const ContactForm = () => {
+  const navigate = useNavigate();
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    navigate("/congrats");
+  };
   return (
-    <form className={styles.main}>
+    <form onSubmit={handleSubmit} className={styles.main}>
       <h2 className={styles.headline}>Contact Us</h2>
       <div className={styles.inputFields}>
         <input type="text" placeholder="Your name" name="name" required />
@@ -20,9 +27,7 @@ const ContactForm = () => {
         <textarea placeholder="Your message" name="message" required />
       </div>
       <div className={styles.submitButton}>
-        <Link to="/congrats">
-          <button type="submit">Submit</button>
-        </Link>
+        <button type="submit">Submit</button>
       </div>
     </form>
   );
