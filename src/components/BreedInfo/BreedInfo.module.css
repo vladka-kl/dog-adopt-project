@@ -2,26 +2,68 @@
   font-family: "Montserrat";
 }
 
+.infobox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .title {
   font-size: 18px;
-  color: var(--accent-color);
+  color: var(--bg-color);
   font-style: normal;
   line-height: 150%;
   font-weight: 600;
 }
 
-.infobox {
+.infolist {
   display: flex;
   list-style: none;
   flex-direction: column;
-  justify-content: right;
+  background-color: var(--accent-color);
+  width: 28rem;
+  height: 25rem;
+  padding: 2rem;
+  border-radius: 10px;
   gap: 15px;
 }
 .photobox {
   display: flex;
-  justify-content: flex-start;
   object-fit: cover;
   width: 28rem;
-  height: 18rem;
-  background-color: var(--main-color);
+  height: 25rem;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* DESKTOP SIZE */
+@media all and (min-width: 768px) {
+  .infobox {
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 2rem;
+    border-radius: 1em;
+  }
+
+  .infolist {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    background-color: var(--accent-color);
+    max-width: 30%;
+    height: 25rem;
+    padding: 2rem;
+    border-radius: 10px;
+    gap: 15px;
+  }
+
+  .photobox {
+    display: flex;
+    object-fit: cover;
+    width: 28rem;
+    height: 25rem;
+    margin-left: 1rem;
+    border-radius: 10px;
+  }
 }

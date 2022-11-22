@@ -11,16 +11,14 @@ const Details = ({ selectedDog }) => {
 
   console.log(selectedDog);
   return (
-    <div className="LandingPage">
-      <BreedInfo
-        name={selectedDog.name}
-        bred_for={selectedDog.bred_for}
-        temperament={selectedDog.temperament}
-        breed_group={selectedDog.breed_group}
-        life_span={selectedDog.life_span}
-        image={selectedDog.image.url}
-      />
-    </div>
+    <BreedInfo
+      name={selectedDog.name}
+      bred_for={selectedDog.bred_for}
+      temperament={selectedDog.temperament}
+      breed_group={selectedDog.breed_group}
+      life_span={selectedDog.life_span}
+      image={selectedDog.image.url}
+    />
   );
 };
 

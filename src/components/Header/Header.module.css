@@ -17,11 +17,14 @@
   display: flex;
   justify-content: space-between;
   padding: 16px;
+  max-height: 5em;
 }
+
 .headerLogo {
   display: flex;
   flex-direction: row;
   gap: 10px;
+  align-items: center;
 }
 
 .logoText {

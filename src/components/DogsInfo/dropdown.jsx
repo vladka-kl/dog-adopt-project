@@ -1,14 +1,12 @@
 import styles from "./dogsInfo.module.css";
 import React from "react";
 
-const Dropdown = ({ dogsInfoResp, onSelect, isHeader, selectedDog }) => {
+const Dropdown = ({ dogsInfoResp, onSelect }) => {
   return (
     <select onChange={onSelect} className={styles.dropdown}>
-      <option selected disabled hidden>
-        Choose a breed
-      </option>
-      {dogsInfoResp.map((element, index) => (
-        <option key={element.id || index}>{element.name}</option>
+      <option>Choose a breed</option>
+      {dogsInfoResp.map((element) => (
+        <option key={element.id}>{element.name}</option>
       ))}
     </select>
   );

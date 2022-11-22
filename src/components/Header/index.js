@@ -5,7 +5,7 @@ import React from "react";
 
 const Header = ({ dogsInfoResp, setSelectedDog, selectedDog }) => {
   return (
-    <div className={styles.mainHeader}>
+    <header className={styles.mainHeader}>
       <Logo />
       <NavBar
         setSelectedDog={setSelectedDog}
@@ -13,7 +13,7 @@ const Header = ({ dogsInfoResp, setSelectedDog, selectedDog }) => {
         className={styles.desktopNavbar}
         selectedDog={selectedDog}
       />
-    </div>
+    </header>
   );
 };
 
