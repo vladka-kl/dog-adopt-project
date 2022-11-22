@@ -26,13 +26,7 @@
 }
 
 .pictureBox {
-  display: flex;
-  width: 24rem;
-  height: 18rem;
-  margin-left: 3rem;
-  object-fit: cover;
-  margin-top: 3rem;
-  box-shadow: var(--standard-shadow);
+  display: none;
 }
 
 .title1 {
@@ -40,7 +34,7 @@
   text-align: center;
   font-style: normal;
   font-weight: lighter;
-  font-size: 2 em;
+  font-size: 2rem;
   line-height: 150%;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -113,9 +107,7 @@
 
 .dropdown {
   display: flex;
-
   margin: 30px 74px;
-
   height: 40px;
   width: 170px;
   background-color: rgba(98, 109, 85, 1);
@@ -140,6 +132,8 @@
 .pawPic {
   width: 12%;
   height: 12%;
+}
+@media screen and (min-width: 600px) {
 }
 
 @media screen and (min-width: 768px) {
@@ -172,8 +166,8 @@
 
   .pictureBox {
     display: flex;
-    width: 26rem;
-    height: 18rem;
+    width: 24rem;
+    height: auto;
     margin-left: 104px;
     object-fit: cover;
   }
@@ -220,9 +214,9 @@
   }
 
   .pictureBox {
+    display: flex;
     width: 65%;
     margin-left: 260px;
-
     width: 28rem;
     height: 20rem;
   }
