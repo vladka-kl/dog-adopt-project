@@ -216,6 +216,7 @@ a:any-link {
   }
 
   .picture {
+    display: inline-block;
     border: none !important;
     width: 21rem;
     height: auto;
@@ -234,6 +235,14 @@ a:any-link {
     height: 35px;
     width: 130px;
     padding-left: 10px;
+  }
+
+  .footerLinksGen {
+    padding: 0;
+  }
+
+  .footerLinksSocial {
+    padding: 0;
   }
 }
 

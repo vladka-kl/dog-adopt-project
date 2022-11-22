@@ -15,7 +15,6 @@
   height: 60%;
   z-index: -1;
   position: absolute;
-
   margin: 0 16px;
 }
 
@@ -28,9 +27,10 @@
 .pictureBox {
   display: flex;
   width: 18rem;
-  height: auto;
+  height: 14rem;
   margin-left: var(--small-margin);
   object-fit: cover;
+  box-shadow: var(--standard-shadow);
 }
 
 .title1 {
@@ -142,7 +142,8 @@
 
 @media screen and (min-width: 768px) {
   .container {
-    gap: 100px;
+    gap: 4rem;
+    width: 90%;
   }
 
   .pawPic {
@@ -171,7 +172,7 @@
   .pictureBox {
     display: flex;
     width: 24rem;
-    height: auto;
+    height: 18rem;
     margin-left: 104px;
     object-fit: cover;
   }
