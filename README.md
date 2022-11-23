@@ -1,4 +1,5 @@
-<img align="center" width="599" alt="Screen Shot 2022-11-23 at 07 06 39" src="https://user-images.githubusercontent.com/84926603/203481995-99a1199f-d8ea-4990-bd2d-60e00284cff6.png">
+<img align="center" width="657" alt="Screen Shot 2022-11-23 at 09 40 26" src="https://user-images.githubusercontent.com/84926603/203503540-2080cc3d-340b-4a52-9872-0957f17f00d1.png">
+
 
 # Adopt Don`t Buy
 
