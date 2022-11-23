@@ -1,0 +1,155 @@
+.containerBG {
+  display: flex;
+  width: 100%;
+  background: var(--bg-color);
+  background-color: var(--bg-color);
+  margin-bottom: 50px;
+  font-weight: bolder;
+}
+
+.mainDogImg {
+  display: inline-block;
+  max-width: 15.5rem;
+  object-position: bottom;
+}
+.mainDog {
+  position: relative;
+  top: 12.5rem;
+  right: 7rem;
+}
+
+.welcomeBox {
+  padding: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.title {
+  color: #ffffff85;
+  font-weight: bold;
+  font-family: var(--main-font) !important;
+  font-size: 3rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.adoptButton {
+  font-size: 1rem;
+  width: 8rem;
+  height: auto;
+  padding: var(--standard-padding);
+  border-radius: 12px;
+  border: none;
+  background-color: var(--accent-color);
+  color: var(--main-color);
+  box-shadow: var(--standard-shadow);
+  text-shadow: var(--standard-shadow);
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  .mainDogImg {
+    display: inline-block;
+    max-width: 29rem;
+    object-position: bottom;
+  }
+  .mainDog {
+    position: relative;
+    top: 17.8rem;
+    right: 13rem;
+  }
+
+  .title {
+    font-size: 6.25rem;
+  }
+
+  .adoptButton {
+    font-size: 24px;
+    width: 8rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mainDogImg {
+    display: inline-block;
+    max-width: 34rem;
+    object-position: bottom;
+  }
+  .mainDog {
+    position: relative;
+    top: 14.3rem;
+    right: 13rem;
+  }
+
+  .title {
+    font-size: 6.25rem;
+  }
+
+  .adoptButton {
+    font-size: 24px;
+    width: 8rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .mainDogImg {
+    display: inline-block;
+    max-width: 38rem;
+  }
+  .mainDog {
+    position: relative;
+    top: 23rem;
+    right: 12rem;
+  }
+
+  .welcomeBox {
+    margin: 100px 50px 100px 50px;
+  }
+
+  .title {
+    font-size: 6.25rem;
+  }
+
+  .adoptButton {
+    font-size: 24px;
+    width: 8rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .mainDogImg {
+    display: inline-block;
+    width: 38rem;
+  }
+
+  .mainDog {
+    position: relative;
+    top: 22.5rem;
+    right: 10rem;
+  }
+
+  .title {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (min-width: 1304px) {
+  .mainDogImg {
+    display: inline-block;
+    width: 38rem;
+  }
+
+  .mainDog {
+    position: relative;
+    top: 13.5rem;
+    right: 9rem;
+  }
+
+  .title {
+    font-size: 6rem;
+  }
+}

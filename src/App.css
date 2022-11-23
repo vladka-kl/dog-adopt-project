@@ -1,38 +1,38 @@
-.App {
-  text-align: center;
+:root {
+  --accent-color: #5d684f;
+  --main-color: #fffbf7;
+  --bg-color: #a78d75;
+  --main-font: "Epilogue", sans-serif;
+  --standard-margin: 16px;
+  --small-margin: 8px;
+  --large-margin: 74px;
+  --main-font: 16px;
+  --large-font: 24px;
+  --standard-padding: 16px;
+  --standard-shadow: 2px 2px 4px rgba(0, 0, 0, 0.29);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font);
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  background-color: var(--main-color);
+  font-family: "Epilogue", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* ----- Restyling Elements of NPM Package for RandomDogSlider----- */
+
+.alice-carousel * {
+  color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.alice-carousel__dots-item {
+  display: none !important;
 }

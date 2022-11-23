@@ -1,0 +1,281 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--accent-color);
+  left: 0%;
+  right: 0%;
+  top: 92.24%;
+  bottom: 0%;
+  width: 100%;
+  margin-bottom: 0px;
+  font-family: "Montserrat";
+  text-decoration: none;
+}
+
+.copyrightRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(58, 58, 58, 1);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  letter-spacing: -0.01em;
+  padding: 1rem;
+  left: 0%;
+  right: 0%;
+  top: 96%;
+  bottom: 0%;
+}
+.iconGit {
+  width: 20rem;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.textLink {
+  text-decoration: none;
+}
+
+.colorBlock {
+  background-color: var(--accent-color);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-self: center;
+  justify-content: space-around;
+  color: var(--main-color);
+  gap: 10px;
+  margin: var(--small-margin);
+}
+
+.titleLinks {
+  font-weight: bolder !important;
+}
+
+.picBlock {
+  display: flex;
+  width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+}
+
+.picture {
+  display: none;
+}
+
+.text {
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+.copyright {
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(58, 58, 58, 1);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19px;
+  letter-spacing: -0.01em;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  left: 0%;
+  right: 0%;
+  top: 96%;
+  bottom: 0%;
+}
+
+.checkBtn {
+  background-color: rgba(93, 104, 79, 1);
+  color: white;
+  font-family: "Montserrat";
+  font-size: 14px;
+  height: 36x;
+  width: 90px;
+  padding-left: 10px;
+}
+
+/* ---- Modal starts here ---- */
+
+.activeModal {
+  overflow-y: hidden;
+}
+
+.btnModal {
+  border: none;
+  background: transparent;
+  display: block;
+}
+
+.modal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay {
+  background: rgba(49, 49, 49, 0.8);
+}
+.modalContent {
+  display: flex;
+  color: var(--accent-color);
+  position: fixed;
+  background: var(--main-color);
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  max-height: 90%;
+  flex-wrap: wrap;
+}
+
+.closeModal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 7px;
+}
+
+a:any-link {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.links {
+  display: flex;
+}
+
+.iconPersonal {
+  color: var(--accent-color) !important;
+  margin-top: var(--small-margin);
+  width: 50px !important;
+  height: auto;
+}
+.iconDog {
+  margin-bottom: var(--small-margin);
+}
+.prCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .copyright {
+    font-size: 14px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+
+  .picBlock {
+    display: flex;
+    max-height: 150px;
+    justify-content: end;
+    position: relative;
+  }
+
+  .picture {
+    display: inline-block;
+    border: none !important;
+    width: 16rem;
+    height: auto;
+    max-width: 100% !important;
+    cursor: pointer;
+  }
+
+  .colorBlock {
+    gap: 15px;
+    width: 150%;
+    position: relative;
+  }
+
+  .checkBtn {
+    font-size: 17px;
+    height: 35px;
+    width: 130px;
+    padding-left: 10px;
+  }
+
+  .footerLinksGen {
+    padding: 0;
+  }
+
+  .footerLinksSocial {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .copyright {
+    font-size: 20px;
+    line-height: 19px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+  }
+
+  .text {
+    font-size: 28px;
+  }
+
+  .picBlock {
+    display: flex;
+    max-height: 150px;
+    justify-content: end;
+    position: relative;
+  }
+
+  .picture {
+    width: 32rem;
+  }
+
+  .checkBtn {
+    font-size: 22px;
+    height: 45x;
+    width: 180px;
+    padding-left: 10px;
+  }
+
+  .colorBlock {
+    gap: 32px;
+    width: 200%;
+    position: relative;
+    padding-left: 1em;
+  }
+
+  .modal,
+  .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+  }
+}
