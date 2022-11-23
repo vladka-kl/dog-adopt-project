@@ -9,13 +9,13 @@ Adopt Don`t Buy use The Dog API to provide with information about different bree
 
 Try it yourself with this link: http://adopts.netlify.app
 
-## Technical skills
+## Built With
 - HTML5
 - CSS
 - JavaScript
 - Axios
 - React
-- Netlify hosting
+- NPM
 
 ## Features
 - Pleasing to the eye responsive design
