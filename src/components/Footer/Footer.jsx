@@ -7,9 +7,6 @@ import { AiFillLinkedin, AiOutlineInstagram } from "react-icons/ai";
 import Module from "./Modal";
 import { HashLink } from "react-router-hash-link";
 
-const linkNames = ["About", "Contact", "Our Team"];
-const socialMedia = ["Github", "LinkedIn", "Instagram"];
-
 const Footer = () => {
   return (
     <div className={styles.footer}>

@@ -13,6 +13,7 @@ export default function Maps() {
         scrolling="yes"
         marginheight="20"
         marginwidth="0"
+        title="Shelters map"
       ></iframe>
     </div>
   );
