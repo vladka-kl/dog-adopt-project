@@ -25,8 +25,9 @@ Try it yourself with this link: http://adopts.netlify.app
 - Contact form with restricted input 
 - Google maps for searching shelters nearby
 
+
 ## User-Story
-[Landing page] 
+{Landing page} 
 As a user I want to see clean menu visualisation. 
 I need comfortable and fast way to get information about the website and, most important, breed I`m interested in. 
 I would like to get more details about adoption process and get support in dogs adoption questions. 
@@ -34,6 +35,20 @@ Photos of different breeds would help me to make my choice.
 As a user I want to transfer through the Website easily and get interaction by click on a buttons or links.
 I would like learn more about organization I'm dealing with.
 
+{Breeds Info}
+As a user I want to see detailed information to inspect breed details.
+I want to get all characteristics of a breed before adoption to avoid surprises.
+
+{Contact Us}
+As a user I need to send the request for chosen breed.
+I want to send my request after I filled it and click submit button.
+
+{Congratulations}
+As a user I want to be sure my adopt request was sent succesfully.
+I want to get some information about dog shelters in my area on a map.
+As a user I user want to  get adress of nearest dog shelter(s)
+
 
  
+
 
