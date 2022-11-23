@@ -1,9 +1,9 @@
 <img align="center" width="657" alt="Screen Shot 2022-11-23 at 09 40 26" src="https://user-images.githubusercontent.com/84926603/203503540-2080cc3d-340b-4a52-9872-0957f17f00d1.png">
 
 
-# Adopt Don`t Buy
+# Adopt Don`t Shop
 
-Adopt Don`t Buy use The Dog API to provide with information about different breeds and display dogs' photos. The initial goal of the project is to promote adoption over buying, help with choice of the dog and the most important -  brigthen up the mood of a user. 
+Adopt Don`t Shop use The Dog API to provide with information about different breeds and display dogs' photos. The initial goal of the project is to promote adoption over buying, help with choice of the dog and the most important -  brigthen up the mood of a user. 
 
 ## DEMO
 
