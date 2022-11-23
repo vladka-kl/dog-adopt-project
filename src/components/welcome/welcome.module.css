@@ -51,6 +51,28 @@
   cursor: pointer;
 }
 
+@media screen and (min-width: 600px) {
+  .mainDogImg {
+    display: inline-block;
+    max-width: 29rem;
+    object-position: bottom;
+  }
+  .mainDog {
+    position: relative;
+    top: 17.8rem;
+    right: 13rem;
+  }
+
+  .title {
+    font-size: 6.25rem;
+  }
+
+  .adoptButton {
+    font-size: 24px;
+    width: 8rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .mainDogImg {
     display: inline-block;
