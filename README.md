@@ -20,6 +20,20 @@ Try it yourself with this link: http://adopts.netlify.app
 ## Features
 - Pleasing to the eye responsive design
 - Dropdown lists to choose the breed
+- Reusable cards with breed information
 - Random dog pictures slider
 - Contact form with restricted input 
 - Google maps for searching shelters nearby
+
+## User-Story
+[Landing page] 
+As a user I want to see clean menu visualisation. 
+I need comfortable and fast way to get information about the website and, most important, breed I`m interested in. 
+I would like to get more details about adoption process and get support in dogs adoption questions. 
+Photos of different breeds would help me to make my choice.
+As a user I want to transfer through the Website easily and get interaction by click on a buttons or links.
+I would like learn more about organization I'm dealing with.
+
+
+ 
+
