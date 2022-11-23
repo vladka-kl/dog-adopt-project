@@ -1,7 +1,7 @@
 <img align="center" width="657" alt="Screen Shot 2022-11-23 at 09 40 26" src="https://user-images.githubusercontent.com/84926603/203503540-2080cc3d-340b-4a52-9872-0957f17f00d1.png">
 
 
-# Adopt Don`t Buy
+# Adopt Don`t Shop
 
 Adopt Don`t Buy use The Dog API to provide with information about different breeds and display dogs' photos. The initial goal of the project is to promote adoption over buying, help with choice of the dog and the most important -  brigthen up the mood of a user. 
 
@@ -23,3 +23,16 @@ Try it yourself with this link: http://adopts.netlify.app
 - Random dog pictures slider
 - Contact form with restricted input 
 - Google maps for searching shelters nearby
+
+{Breeds Info}
+As a user I want to see detailed information to inspect breed details.
+I want to get all characteristics of a breed before adoption to avoid surprises.
+
+{Contact Us}
+As a user I need to send the request for chosen breed.
+I want to send my request after I filled it and click submit button.
+
+{Congratulations}
+As a user I want to be sure my adopt request was sent succesfully.
+I want to get some information about dog shelters in my area on a map.
+As a user I user want to  get adress of nearest dog shelter(s)
