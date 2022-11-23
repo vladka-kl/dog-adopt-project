@@ -25,6 +25,14 @@ Try it yourself with this link: http://adopts.netlify.app
 - Contact form with restricted input 
 - Google maps for searching shelters nearby
 
+## Installation
+
+### This project was bootstrapped with Create React App.
+
+Clone this repo to your desktop and run `npm install` to install all the dependencies.
+
+
+
 
 ## User-Story
 {Landing page} 
@@ -39,6 +47,7 @@ I would like learn more about organization I'm dealing with.
 As a user I want to see detailed information to inspect breed details.
 I want to get all characteristics of a breed before adoption to avoid surprises.
 
+
 {Contact Us}
 As a user I need to send the request for chosen breed.
 I want to send my request after I filled it and click submit button.
@@ -48,6 +57,12 @@ As a user I want to be sure my adopt request was sent succesfully.
 I want to get some information about dog shelters in my area on a map.
 As a user I user want to  get adress of nearest dog shelter(s)
 
+## Contributors 
+
+* [Robert Kaniuth](https://github.com/RobertKaniuth)
+* [Vladyslava Klovak](https://github.com/vladka-kl)
+* [Valeria Kurylko](https://github.com/kurylko)
+* [Ahmed Elbehary](https://github.com/elbehary01)
 
  
 
