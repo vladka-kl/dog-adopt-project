@@ -3,7 +3,7 @@
 
 # Adopt Don`t Shop
 
-Adopt Don`t Shop use The Dog API to provide with information about different breeds and display dogs' photos. The initial goal of the project is to promote adoption over buying, help with choice of the dog and the most important -  brigthen up the mood of a user. 
+Adopt Don`t Shop use [The Dog API](https://docs.thedogapi.com/) to provide with information about different breeds and display dogs' photos. The initial goal of the project is to promote adoption over buying, help with choice of the dog and the most important -  brigthen up the mood of a user. 
 
 ## DEMO
 
