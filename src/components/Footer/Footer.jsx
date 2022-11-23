@@ -49,7 +49,7 @@ const Footer = () => {
           </a>
           <a
             className={styles.iconPersonal}
-            href="https://www.linkedin.com/"
+            href="https://www.instagram.com/"
             target="_blank"
           >
             <i>
