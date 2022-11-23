@@ -1,6 +1,8 @@
 const RandomText = {
   title: "ABOUT US ",
-  text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  text:
+    "Do you love Dogs as much as we do? Are you dreaming of having a Dog in your Life or maybe even made the Decision?" +
+    " Well then you should consider to adopt one rather than buying a Dog from a Breeder. There are so many lovely Cuties out there looking for a cozy Home and a lovely Family.",
 };
 
 export { RandomText };
