@@ -15,7 +15,6 @@
 
 .logoText {
   font-size: 14px;
-  margin-top: var(--small-margin);
   color: var(--main-color);
   text-decoration: none;
   font-family: "Montserrat", sans-serif;

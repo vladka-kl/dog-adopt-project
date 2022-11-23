@@ -7,13 +7,12 @@ export const Logo = () => {
   return (
     <div className={styles.headerLogo}>
       <Link to="/">
-
         <img className={styles.imageLogo} src={logo} alt="logo"></img>
-
       </Link>
       <div className={styles.logoText}>
-        <p>ADOPTS</p>
-        <p>ADOPT DOG</p>
+        <p>
+          ADOPT <br /> A DOG
+        </p>
       </div>
     </div>
   );
