@@ -59,10 +59,10 @@ As a user I user want to  get adress of nearest dog shelter(s)
 
 ## Contributors 
 
-* [Robert Kaniuth](https://github.com/RobertKaniuth)
-* [Vladyslava Klovak](https://github.com/vladka-kl)
-* [Valeria Kurylko](https://github.com/kurylko)
-* [Ahmed Elbehary](https://github.com/elbehary01)
+* [Robert Kaniuth](https://github.com/RobertKaniuth): navbar, full dog's info page, contact form, contragulation page
+* [Vladyslava Klovak](https://github.com/vladka-kl): about us section, picture slider, map component, welcome section, footer
+* [Valeria Kurylko](https://github.com/kurylko): dog's info section, footer, management
+* [Ahmed Elbehary](https://github.com/elbehary01): routes implementation, 8 steps section
 
  
 
