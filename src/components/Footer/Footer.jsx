@@ -4,7 +4,7 @@ import React from "react";
 import FooterDog from "../../assets/images/FooterDog.png";
 import { FaGithubSquare } from "react-icons/fa";
 import { AiFillLinkedin, AiOutlineInstagram } from "react-icons/ai";
-import Module from "./Modal";
+import Modal from "./Modal";
 import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
@@ -18,9 +18,9 @@ const Footer = () => {
           <Link to="/contact" className={styles.textLink}>
             <p>Contact</p>
           </Link>
-          <Module>
+          <Modal>
             <p>Our Team</p>
-          </Module>
+          </Modal>
           <a
             className={styles.iconPersonal}
             href="https://github.com/vladka-kl/dog-adopt-project"
