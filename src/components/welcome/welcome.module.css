@@ -145,11 +145,18 @@
 
   .mainDog {
     position: relative;
-    top: 13.5rem;
+    top: 22.5rem;
     right: 9rem;
   }
 
   .title {
     font-size: 6rem;
+  }
+
+  @media screen and (min-width: 1394px) {
+    .mainDog {
+      top: 13.5rem;
+      right: 9rem;
+    }
   }
 }
